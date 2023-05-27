@@ -8,22 +8,22 @@
 
 <h3>Primeiro Projeto</h3>
 
-<ol>
+<ul>
     <li><strong>Data</strong>: 15/05/2023</li>
     <li><strong>Descrição</strong>: <em>Este é o meu primeiro projeto de desenvolvimento web. É um site simples que apresenta minhas habilidades em HTML e CSS.</em></li>
     <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/first-website/index.html" target="_blank">Clique aqui para abrir!</a></li>
-</ol>
+</ul>
 
 <h3>Segundo Projeto</h3>
 
-<ol>
+<ul>
     <li><strong>Data</strong>: 25/05/2023</li>
     <li><strong>Descrição</strong>: <em>Este é o meu segundo projeto de desenvolvimento web. É um site responsivo que apresenta informações sobre o sistema operacional Android.</em></li>
     <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-android/index.html">Clique aqui para abrir!</a></li>
-</ol>
+</ul>
 
 <h2>Como Contribuir</h2>
 
 <p>Se você quiser contribuir para algum dos meus projetos, sinta-se à vontade para abrir uma issue ou enviar um pull request. Ficarei feliz em receber feedback e sugestões de melhoria.</p>
 
-<p>Espero que você goste dos meus projetos! Obrigado por visitar meu repositório.</p>
+<p><strong>Espero que você goste dos meus projetos! Obrigado por visitar meu repositório.</strong></p>

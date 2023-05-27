@@ -1,0 +1,28 @@
+ body {
+    background-color: #0000ff
+}
+ 
+ .prev-button {
+    display: flex;
+    justify-content: center;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+.new-page {
+    display: flex;
+    justify-content: center;
+}

@@ -1,5 +1,5 @@
 # projetos
- Aqui está meus projetos pessoais.
+## Aqui está meus projetos pessoais, que estou fazendo de acordo com o avanço dos meu estudos de Desenvolvimento Web.
 
-<a href="jefersonwayne.github.io/projetos/first-website" target="_blank" rel="external">Meu primeiro projeto</a>
-<a href="jefersonwayne.github.io/projetos/website-android" target="_blank" rel="external">Meu segundo projeto</a>, conteúdo educacional divulgado pelo <a href="cursoemvideo.com" target="_blank" rel="external">CursoEmVídeo</a>
+<p>Data: 15/05/2023 <a href="jefersonwayne.github.io/projetos/first-website">Meu primeiro projeto</a></p>
+<p>Data: 25/05/2023 <a href="jefersonwayne.github.io/projetos/website-android">Meu segundo projeto</a></p>

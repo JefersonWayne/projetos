@@ -18,8 +18,8 @@
 
 <ul>
     <li><strong>Data</strong>: 25/05/2023</li>
-    <li><strong>Descrição</strong>: <em>Este é o meu segundo projeto de desenvolvimento web. É um site responsivo que apresenta informações sobre o sistema operacional Android.</em></li>
-    <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-android/index.html">Clique aqui para abrir!</a></li>
+    <li><strong>Descrição</strong>: <em>Este é o meu segundo projeto de desenvolvimento web. É um site responsivo que apresenta a História do Mascote do Android</em></li>
+    <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-android/index.html" target="_blank">Clique aqui para abrir!</a></li>
 </ul>
 
 <h2>Como Contribuir</h2>

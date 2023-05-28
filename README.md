@@ -6,7 +6,7 @@
 
 <p>Aqui estão alguns dos meus projetos mais recentes:</p>
 
-<h2>Primeiro Projeto</h3>
+<h3>Primeiro Projeto</h3>
 
 <ul>
     <li><strong>Data</strong>: 15/05/2023</li>
@@ -14,7 +14,7 @@
     <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/first-website/index.html" target="_blank">Clique aqui para abrir!</a></li>
 </ul>
 
-<h2>Segundo Projeto</h3>
+<h3>Segundo Projeto</h3>
 
 <ul>
     <li><strong>Data</strong>: 25/05/2023</li>
@@ -22,7 +22,7 @@
     <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-android/index.html" target="_blank">Clique aqui para abrir!</a></li>
 </ul>
 
-<h2>Terceiro Projeto</h3>
+<h3>Terceiro Projeto</h3>
 
 <ul>
     <li><strong>Data</strong>: 25/05/2023</li>

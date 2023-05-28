@@ -49,8 +49,6 @@ header > p > a:hover {
     cursor: pointer;
 }
 
-main {
-}
 
 main > section >  p {
     font-size: 3vw;
@@ -60,9 +58,6 @@ main > section >  p {
 
 .container-noimage {
     margin: 5% 0 5% 5%;
-}
- 
-.container-noimage > p {
 }
 
 .container-image {

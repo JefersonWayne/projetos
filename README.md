@@ -6,7 +6,7 @@
 
 <p>Aqui estão alguns dos meus projetos mais recentes:</p>
 
-<h3>Primeiro Projeto</h3>
+<h2>Primeiro Projeto</h3>
 
 <ul>
     <li><strong>Data</strong>: 15/05/2023</li>
@@ -14,13 +14,22 @@
     <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/first-website/index.html" target="_blank">Clique aqui para abrir!</a></li>
 </ul>
 
-<h3>Segundo Projeto</h3>
+<h2>Segundo Projeto</h3>
 
 <ul>
     <li><strong>Data</strong>: 25/05/2023</li>
     <li><strong>Descrição</strong>: <em>Este é o meu segundo projeto de desenvolvimento web. É um site responsivo que apresenta a História do Mascote do Android</em></li>
     <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-android/index.html" target="_blank">Clique aqui para abrir!</a></li>
 </ul>
+
+<h2>Terceiro Projeto</h3>
+
+<ul>
+    <li><strong>Data</strong>: 25/05/2023</li>
+    <li><strong>Descrição</strong>: <em>Este é o meu terceiro projeto de desenvolvimento web. É um site responsivo que apresenta o Cordel de Milton Martes: "CORDEL MODERNO - Tecnologia do agora"</em></li>
+    <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-android/index.html" target="_blank">Clique aqui para abrir!</a></li>
+</ul>
+
 
 <h2>Como Contribuir</h2>
 

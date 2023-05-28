@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+body,
+body * {
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte1);
+}
+
+header {
+    margin: 0;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+header > h1 {
+    font-family: var(--fonte2);
+    color: white;
+    font-size: 10vw;
+    font-variant: small-caps;
+    letter-spacing: 0.02em;
+}
+
+header > p {
+    color: white;
+}
+
+header > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+header > p > a:hover {  
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main {
+}
+
+main > section >  p {
+    font-size: 3vw;
+    font-family: var(--fonte3);
+    line-height: 5vw;
+}
+
+.container-noimage {
+    margin: 5% 0 5% 5%;
+}
+ 
+.container-noimage > p {
+}
+
+.container-image {
+    margin: 0;
+    padding: 2% 5%;
+}
+
+.container-image > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 35vw;
+    padding: 0em 0.2em;
+
+
+}
+
+#container-image1 {
+    background: black url('imagens/background001.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0.7em 0 rgb(0 0 0);
+}
+#container-image2 {
+    background: black url('imagens/background002.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0.7em 0 rgb(0 0 0);
+}
+
+footer {
+    background-color: #0D0D0D;
+    color: white;
+    width: 100vw;
+    height: 10vh;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+

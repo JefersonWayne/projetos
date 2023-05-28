@@ -20,6 +20,7 @@ body * {
 header {
     margin: 0;
     height: 40vh;
+    max-height: 20em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,6 +55,7 @@ main > section >  p {
     font-size: 3vw;
     font-family: var(--fonte3);
     line-height: 5vw;
+    padding: 0em 0.2em;
 }
 
 .container-noimage {
@@ -70,8 +72,6 @@ main > section >  p {
     background-color: rgba(0, 0, 0, 0.7);
     width: 35vw;
     padding: 0em 0.2em;
-
-
 }
 
 #container-image1 {
@@ -104,4 +104,14 @@ footer {
 }
 
 
-
+@media (max-width: 1000px) {
+    main > section >  p {
+        font-size: 5vw;
+        line-height: 10vw;
+    }
+    .container-image > p {
+        font-size: 5vw;
+        line-height: 10vw;
+        width: 60vw;
+    }
+}

@@ -109,8 +109,6 @@ footer {
         min-height: 10em;
         max-height: 25em;    
     }
-    header > h1 {
-    }
     main > section >  p {
         font-size: 5vw;
         line-height: 10vw;

@@ -11,7 +11,10 @@ body {
 }
 
 main {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 main > section#smartphone-frame {
@@ -31,24 +34,62 @@ main > section#smartphone-frame {
     top: 12.2%;
     width: 13em;
     left: 7%;
+}
+
+#screen:hover {
     box-shadow: 0 0 3em 0 rgba(255, 255, 255, 0.3);
+    transition-duration: 300ms;
 }
 
 #buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     position: relative;
-    top: 3em;
+    top: 5em;
     left: 50%;
     transform: translate(-50%,0);
-    width: 50vw;
-    height: 10vh;
+
+    width: 23em;
 }
 
 #buttons > a {
     color: transparent;
+    margin: 0.5em;
 }
 
 #buttons > a > img {
     height: auto;
-    width: 10%;
+    width: 5em;
     border-radius: 50%;
+}
+
+#buttons > #buttons-home > img:hover {
+    box-shadow: 0 0 1em 0 rgb(101, 101, 101);
+    transition-duration: 300ms;
+}
+
+#buttons > #buttons-instagram > img:hover {
+    box-shadow: 0 0 1em 0 rgb(136 18 131);
+    transition-duration: 300ms;
+}
+
+#buttons > #buttons-twitter > img:hover {
+    box-shadow: 0 0 1em 0 rgb(0, 125, 117);
+    transition-duration: 300ms;
+}
+#buttons > #buttons-youtube > img:hover {
+    box-shadow: 0 0 1em 0 rgb(109, 0, 0);
+    transition-duration: 300ms;
+}
+#buttons > #buttons-facebook > img:hover {
+    box-shadow: 0 0 1em 0 rgb(0, 30, 113);
+    transition-duration: 300ms;
+}
+#buttons > #buttons-github > img:hover {
+    box-shadow: 0 0 1em 0 rgb(0, 147, 10);
+    transition-duration: 3rgb(0, 122, 14)
 }

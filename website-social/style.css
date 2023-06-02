@@ -12,8 +12,8 @@ body {
 main {
     height: 100vh;
     width: 100vw;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     overflow-x: hidden;
 }
@@ -26,14 +26,28 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
 }
 
 #container-smartphone > iframe {
     border: transparent;
-    width: 85.5%;
-    height: 76%;
+    width: 87.5%;
+    height: 76.5%;
     position: absolute;
-    top: 12.6%;
-    left: 7.4%;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    top: 12.25%;
+    left: 6.5%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+#container-buttons {
+    justify-self: flex-end;
+    position: relative;
+    right: 5%;
+}
+
+#container-buttons > div > a > img {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
 }

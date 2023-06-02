@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 10);
+}
+
+main {
+    position: relative;
+}
+
+main > section#buttons-title {
+    position: relative;
+    top: 5em;
+}
+
+main > section#smartphone-frame {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 10%);
+    background: transparent url('../images/frame-iphone.png') center center no-repeat;
+    background-size: contain;
+    width: 15em;
+    height: 30em;
+}
+
+#smartphone-frame > #screen {
+    position: relative;
+    height: 22.85em;
+    top: 12.2%;
+    width: 13em;
+    left: 7%;
+    box-shadow: 0 0 3em 0 rgba(255, 255, 255, 0.3);
+}

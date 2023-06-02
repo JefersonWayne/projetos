@@ -14,11 +14,6 @@ main {
     position: relative;
 }
 
-main > section#buttons-title {
-    position: relative;
-    top: 5em;
-}
-
 main > section#smartphone-frame {
     position: relative;
     left: 50%;
@@ -37,4 +32,23 @@ main > section#smartphone-frame {
     width: 13em;
     left: 7%;
     box-shadow: 0 0 3em 0 rgba(255, 255, 255, 0.3);
+}
+
+#buttons {
+    position: relative;
+    top: 3em;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 50vw;
+    height: 10vh;
+}
+
+#buttons > a {
+    color: transparent;
+}
+
+#buttons > a > img {
+    height: auto;
+    width: 10%;
+    border-radius: 50%;
 }

@@ -21,7 +21,7 @@ main > section#smartphone-frame {
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 10%);
+    transform: translate(-50%, 0%);
     background: transparent url('../images/frame-iphone.png') center center no-repeat;
     background-size: contain;
     width: 15em;
@@ -49,7 +49,7 @@ main > section#smartphone-frame {
     flex-wrap: wrap;
 
     position: relative;
-    top: 5em;
+    top: 2em;
     left: 50%;
     transform: translate(-50%,0);
 

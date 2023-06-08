@@ -17,4 +17,114 @@
     font-family: 'Geologica', sans-serif;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    cursor: default;
+}
+
+body {
+    background: var(--color-mid-night-green);
+    background-attachment: fixed;
+    padding: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > #login > div {
+    margin: 0.8em 0;
+}
+
+main > #login {
+    background-color: #007078;
+    padding: 0 1em;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    box-shadow: inset 0 0 2em 0 hsla(0, 0%, 100%, 0.05);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 90vw;
+}
+
+main > #login > #form > #message {
+    order: 2;
+}
+
+main > #login > #form > #message > h1 {
+    text-align: left;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
+}
+
+main > #login > #form > #message > p {
+    text-align: justify;
+    font-weight: 200;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
+}
+
+main > #login > #form {
+    order: 3;
+    width: 100%;
+}
+
+main > #login > #form > form > div {
+    margin: 0.8em 0;
+}
+
+main > #login > #form > form label {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+main > #login > #form > form > .form-pass-email > input {
+    width: 100%;
+    height: 2.5em;
+    padding: 0 0.2em;
+    border-radius: 0.3em;
+    color: #76cad0;
+    background-color: #004146;
+    border: none;
+}
+
+main > #login > #form > form > #submit > input {
+    width: 100%;
+    align-self: flex-end;
+    height: 3em;
+    padding: 0 0.2em;
+    border-radius: 0.3em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0.4em rgba(0, 0, 0, 0.6);
+    background-color: #33f1ff;
+    border: none;
+}
+main > #login > #form > form > #submit > input:hover {
+    box-shadow: 0 0 0.5em 0 #33f1ff;
+    cursor: pointer;
+}
+
+main > #login > #form > a {
+    font-size: 0.7em;
+    color: #004147;
+    text-align: center;
+}
+
+main > #login > #form > a:hover {
+    cursor: pointer;
+}
+
+main > #login > img {
+    order: 1;
+    height: 75%;
+    min-height: 300px; 
+    width: 75%;
+    min-width: 300px;
 }

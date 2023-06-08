@@ -32,7 +32,6 @@ body {
     height: 100vh;
     width: 100vw;
 
-    transition: height 0.2s, width 0.2s;
 }
 
 main {
@@ -49,6 +48,10 @@ main > #login {
     font-size: 1em;
     border-radius: 0.5em;
 
+
+    transition: height 0.4s, width 0.4s;
+    transition-timing-function: ease;
+    
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -88,7 +91,7 @@ main > #login > #form > form label {
     font-size: 0.7em;
 }
 
-main > #login > #form > form > .form-pass-email > input {
+main > #login > #form > form > .input-box > input {
     width: 100%;
     height: 2.5em;
     padding: 0 0.2em;
@@ -99,10 +102,18 @@ main > #login > #form > form > .form-pass-email > input {
     transition: 0.5s;
 }
 
+main > #login > #form > form > .input-box > input::placeholder {
+    color: #001b1d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 0.7em;
+    text-align: left;
+}
+
 main > #login > #form > form label:hover {
     cursor: pointer;
 }
-main > #login > #form > form > .form-pass-email > input:hover {
+main > #login > #form > form > .input-box > input:hover {
     cursor: pointer;
     box-shadow: 0 0 1em 0 #004146;
 }

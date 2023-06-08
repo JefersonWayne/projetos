@@ -21,7 +21,7 @@
 }
 
 body {
-    background: var(--color-mid-night-green);
+    background: linear-gradient(60deg, rgba(0,0,0,1) 0%, rgba(0,67,70,1) 100%);
     background-attachment: fixed;
     padding: 1em;
 
@@ -31,6 +31,7 @@ body {
 
     height: 100vh;
     width: 100vw;
+    transition: 0.8s;
 }
 
 main {
@@ -39,16 +40,13 @@ main {
     align-items: centers;
 }
 
-main > #login > div {
-    margin: 0.8em 0;
-}
-
 main > #login {
-    background-color: #007078;
+    background-color: rgba(0, 111, 117, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 1em 0 rgba(0, 0, 0, 0.2);
     padding: 0 1em;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 0.5em;
-    box-shadow: inset 0 0 2em 0 hsla(0, 0%, 100%, 0.05);
 
     display: flex;
     justify-content: flex-start;
@@ -57,19 +55,21 @@ main > #login {
     width: 90vw;
 }
 
+main > #login > div {
+    margin: 0.8em 0;
+}
+
 main > #login > #form > #message {
     order: 2;
 }
 
 main > #login > #form > #message > h1 {
     text-align: left;
-    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
 }
 
 main > #login > #form > #message > p {
     text-align: justify;
-    font-weight: 200;
-    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
+    font-weight: lighter;
 }
 
 main > #login > #form {
@@ -95,28 +95,40 @@ main > #login > #form > form > .form-pass-email > input {
     color: #76cad0;
     background-color: #004146;
     border: none;
+    transition: 0.5s;
+}
+
+main > #login > #form > form label:hover {
+    cursor: pointer;
+}
+main > #login > #form > form > .form-pass-email > input:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em 0 #004146;
 }
 
 main > #login > #form > form > #submit > input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
-    align-self: flex-end;
+    font-weight: bold;
     height: 3em;
-    padding: 0 0.2em;
     border-radius: 0.3em;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 0.4em rgba(0, 0, 0, 0.6);
+    color: #003d42;
     background-color: #33f1ff;
     border: none;
+    transition: 0.5s;
 }
 main > #login > #form > form > #submit > input:hover {
-    box-shadow: 0 0 0.5em 0 #33f1ff;
+    box-shadow: 0 0 1em 0 #33f1ff;
     cursor: pointer;
 }
 
 main > #login > #form > a {
     font-size: 75%;
-    color: #004147;
+    color: #00aebe;
     text-align: center;
 }
 

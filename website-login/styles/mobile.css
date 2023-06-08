@@ -19,6 +19,6 @@ body {
 
 main > #login {
     flex-direction: column;
-    font-size: 90%;
+    font-size: 0.9em;
 }
 

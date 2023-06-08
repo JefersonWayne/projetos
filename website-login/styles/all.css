@@ -9,3 +9,12 @@
     --color-magnolia: #EFE9F4;
     --color-aqua: #42F2F7;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}

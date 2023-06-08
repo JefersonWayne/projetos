@@ -5,35 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/all.css" media="all">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 425px)">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Acesse sua conta!</title>
 </head>
 <body>
     <main>
+        <div id="image">
+            <img src="images/hello.svg" alt="Welcome Image">
+        </div>
         <section id="login">
             <div id="message">
-                <h1>Bem-vindo de volta! Faça login para explorar um mundo de possibilidades.</h1>
+                <h1>Bem-vindo de volta!<br>Faça login para explorar um mundo de possibilidades.</h1>
                 <p>Estamos animados para tê-lo(a) de volta! Acesse sua conta para aproveitar todos os recursos incríveis que temos esperando por você.</p>
             </div>
             <div id="form">
                 <form action="cadastro.php" method="post" autocomplete="on">
-                    <div>
-                        <label for="id-email">Seu email:</label>
+                    <div class="form-pass-email">
+                        <label for="id-email">Seu email:</label><br>
                         <input type="email" name="email" id="id-email" min-length="30" required autocomplete="email">
                     </div>
-                    <div>
-                        <label for="id-password">Sua senha:</label>
+                    <div class="form-pass-email">
+                        <label for="id-password">Sua senha:</label><br>
                         <input type="password" name="password" id="id-password" minlength="8" maxlength="20" required autocomplete="current-password">
                     </div>
-                    <div>
+                    <div id="submit">
                         <input type="submit" value="Entrar">
                     </div>
                 </form>
-            </div>
-            <div id="image">
+                <a href="#" target="_self" rel="next">Esqueci minha senha.</a>
             </div>
         </section>
     </main>
-    <img src="images/hello.svg" alt="Welcome Image">
 </body>
 </html>

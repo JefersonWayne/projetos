@@ -1,0 +1,89 @@
+@charset "UTF-8"; /*Compatibilidade com UTF-8*/
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap'); /*Fonte Geologica*/
+
+/*Folha de estilo dedicada para dispositivos mobile*/
+
+
+:root {
+    --color-illustration: #3661FF; /*Paleta de cores*/
+    --color-mid-night-green: #004346;
+    --color-mint: #09BC8A;
+    --color-magnolia: #EFE9F4;
+    --color-aqua: #42F2F7;
+}
+
+body {
+    background: var(--color-mid-night-green);
+    background-attachment: fixed;
+    padding: 1em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > #login > div {
+    margin: 0.8em 0;
+}
+
+main > #login {
+    background-color: #007078;
+    width: 80vw;
+    padding: 0 1em;
+    font-size: 0.8em;
+    border-radius: 0.5em;
+    box-shadow: inset 0 0 2em 0 hsla(0, 0%, 100%, 0.05);
+}
+
+main > #login > #message > h1 {
+    text-align: left;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
+}
+
+main > #login > #message > p {
+    text-align: justify;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
+}
+
+main > #login > #form > form > div {
+    margin: 0.8em 0;
+}
+
+main > #login > #form > form label {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+main > #login > #form > form > .form-pass-email > input {
+    width: 100%;
+    height: 2.5em;
+    padding: 0 0.2em;
+    border-radius: 0.3em;
+    color: #76cad0;
+    background-color: #004146;
+    border: none;
+}
+
+main > #login > #form > form > #submit > input {
+    width: 100%;
+    height: 3em;
+    padding: 0 0.2em;
+    border-radius: 0.3em;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.6);
+    background-color: #00eeff;
+    border: none;
+}
+main > #login > #form > form > #submit > input:hover {
+    box-shadow: 0 0 0.5em 0 #00eeff;
+}
+
+main > #login > #form > a {
+    font-size: 0.7em;
+    color: #002023;
+}

@@ -51,7 +51,7 @@ main > #login {
 
     transition: height 0.4s, width 0.4s;
     transition-timing-function: ease;
-    
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -104,9 +104,8 @@ main > #login > #form > form > .input-box > input {
 
 main > #login > #form > form > .input-box > input::placeholder {
     color: #001b1d;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
-    font-size: 0.7em;
+    font-weight: normal;
+    font-size: 0.8em;
     text-align: left;
 }
 

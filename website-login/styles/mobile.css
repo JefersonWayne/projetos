@@ -13,8 +13,12 @@
     --color-aqua: #42F2F7;
 }
 
+body {
+    height: auto;
+}
+
 main > #login {
     flex-direction: column;
-    font-size: 0.9em;
+    font-size: 90%;
 }
 

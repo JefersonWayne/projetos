@@ -37,6 +37,15 @@ main > #login {
     font-size: 0.8em;
     border-radius: 0.5em;
     box-shadow: inset 0 0 2em 0 hsla(0, 0%, 100%, 0.05);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > #login > #message {
+    order: 2;
 }
 
 main > #login > #message > h1 {
@@ -47,6 +56,11 @@ main > #login > #message > h1 {
 main > #login > #message > p {
     text-align: justify;
     text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
+}
+
+main > #login > #form {
+    order: 3;
+    width: 100%;
 }
 
 main > #login > #form > form > div {
@@ -85,5 +99,10 @@ main > #login > #form > form > #submit > input:hover {
 
 main > #login > #form > a {
     font-size: 0.7em;
-    color: #002023;
+    color: #004147;
+    text-align: center;
+}
+
+main > #login > img {
+    order: 1;
 }

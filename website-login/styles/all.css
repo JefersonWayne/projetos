@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/*Folha de estilo dedicada para todos dispositivos*/
+
+:root {
+    --color-illustration: #3661FF; /*Paleta de cores*/
+    --color-mid-night-green: #004346;
+    --color-mint: #09BC8A;
+    --color-magnolia: #EFE9F4;
+    --color-aqua: #42F2F7;
+}

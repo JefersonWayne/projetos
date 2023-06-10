@@ -7,32 +7,30 @@
 <p>Aqui estão alguns dos meus projetos mais recentes:</p>
 
 <ol>
-<li>
-    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/first-website/index.html" target="_blank">Clique aqui para abrir!</a>
-    <p><strong>Data</strong>: 15/05/2023</p>
-</li>
-<li>
-    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-android/index.html" target="_blank">Clique aqui para abrir!</a>
-    <strong>Data</strong>: 25/05/2023</p>
-</li>
-<li>
-    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-cordel/index.html" target="_blank">Clique aqui para abrir!</a>
-    <p><strong>Data</strong>: 28/05/2023</p>
-</li>
-
-<li>
-    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-social/index.html" target="_blank">Clique aqui para abrir!</a>
-    <p><strong>Data</strong>: 02/06/2023</p>
-</li>
-<li>
-    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-login/index.html" target="_blank">Clique aqui para abrir!</a>
-    <p><strong>Data</strong>: 08/06/2023</p>
-</li>
-
-<li>
-    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/landing-page-01/index.html" target="_blank">Clique aqui para abrir!</a>
-    <p><strong>Data</strong>: 10/06/2023</p>
-</li>
+    <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/first-website/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 15/05/2023</p>
+    </li>
+    <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-android/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 25/05/2023</p>
+    </li>
+    <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-cordel/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 28/05/2023</p>
+    </li>
+    <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-social/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 02/06/2023</p>
+    </li>
+    <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-login/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 08/06/2023</p>
+    </li>
+    <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/landing-page-01/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 10/06/2023</p>
+    </li>
 </ol>
 
 <h2>Como Contribuir</h2>

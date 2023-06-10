@@ -6,46 +6,34 @@
 
 <p>Aqui estão alguns dos meus projetos mais recentes:</p>
 
-<h3>Primeiro Projeto</h3>
+<ol>
+<li>
+    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/first-website/index.html" target="_blank">Clique aqui para abrir!</a>
+    <p><strong>Data</strong>: 15/05/2023</p>
+</li>
+<li>
+    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-android/index.html" target="_blank">Clique aqui para abrir!</a>
+    <strong>Data</strong>: 25/05/2023</p>
+</li>
+<li>
+    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-cordel/index.html" target="_blank">Clique aqui para abrir!</a>
+    <p><strong>Data</strong>: 28/05/2023</p>
+</li>
 
-<ul>
-    <li><strong>Data</strong>: 15/05/2023</li>
-    <li><strong>Descrição</strong>: <em>Este é o meu primeiro projeto de desenvolvimento web. É um site simples que apresenta minhas habilidades em HTML e CSS.</em></li>
-    <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/first-website/index.html" target="_blank">Clique aqui para abrir!</a></li>
-</ul>
+<li>
+    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-social/index.html" target="_blank">Clique aqui para abrir!</a>
+    <p><strong>Data</strong>: 02/06/2023</p>
+</li>
+<li>
+    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-login/index.html" target="_blank">Clique aqui para abrir!</a>
+    <p><strong>Data</strong>: 08/06/2023</p>
+</li>
 
-<h3>Segundo Projeto</h3>
-
-<ul>
-    <li><strong>Data</strong>: 25/05/2023</li>
-    <li><strong>Descrição</strong>: <em>Este é o meu segundo projeto de desenvolvimento web. É um site responsivo que apresenta a História do Mascote do Android</em></li>
-    <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-android/index.html" target="_blank">Clique aqui para abrir!</a></li>
-</ul>
-
-<h3>Terceiro Projeto</h3>
-
-<ul>
-    <li><strong>Data</strong>: 28/05/2023</li>
-    <li><strong>Descrição</strong>: <em>Este é o meu terceiro projeto de desenvolvimento web. É um site responsivo que apresenta o Cordel de Milton Martes: "CORDEL MODERNO - Tecnologia do agora"</em></li>
-    <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-cordel/index.html" target="_blank">Clique aqui para abrir!</a></li>
-</ul>
-
-<h3>Quarto Projeto</h3>
-
-<ul>
-    <li><strong>Data</strong>: 02/06/2023</li>
-    <li><strong>Descrição</strong>: <em>Este é o meu quarto projeto de desenvolvimento web. É um site responsivo que apresenta um celular que possui uma tela dinamica.</em></li>
-    <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-social/index.html" target="_blank">Clique aqui para abrir!</a></li>
-</ul>
-
-<h3>Quinto Projeto</h3>
-
-<ul>
-    <li><strong>Data</strong>: 08/06/2023</li>
-    <li><strong>Descrição</strong>: <em>Este é o meu quarto projeto de desenvolvimento web. É uma página de login responsiva.</em></li>
-    <li><strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/website-login/index.html" target="_blank">Clique aqui para abrir!</a></li>
-</ul>
-
+<li>
+    <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/landing-page-01/index.html" target="_blank">Clique aqui para abrir!</a>
+    <p><strong>Data</strong>: 10/06/2023</p>
+</li>
+</ol>
 
 <h2>Como Contribuir</h2>
 

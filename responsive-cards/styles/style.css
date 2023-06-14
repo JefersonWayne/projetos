@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* style sheets for all devices */
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    cursor: default;
+    background-color: #F6F9FF;
+}
+
+/* cards stylization */
+
+#cards-section {
+    display: flex;
+}
+
+#cards-section > .cards {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    min-width: 150px;
+    max-width: 300px;
+    height: 250px;
+    margin: 1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#cards-section > .cards > .card-image {
+    width: 6rem;
+    height: 6rem;
+}
+
+#cards-section > .cards > .card-image > img {
+    width: 100%;
+}
+
+#cards-section > .cards > h2 {
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0.5rem 0;
+}
+
+#cards-section > .cards > span > p {
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0.5rem 0;
+    font-weight: 300;
+}
+
+#cards-section > .cards > button {
+    color: white;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    padding: 0.6rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#cards-section > #card-chat > button {
+    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+}
+
+#cards-section > #card-bag > button {
+    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+}
+
+#cards-section > #card-play > button {
+    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+}
+
+#cards-section > #card-chat {
+    box-shadow: 20px 20px 50px -30px #DBC4FF,inset 0 0 2rem rgba(0, 0, 0, 0.06);
+}
+#cards-section > #card-bag {
+    box-shadow: 20px 20px 50px -30px #AFD6FF,inset 0 0 2rem rgba(0, 0, 0, 0.06);
+}
+#cards-section > #card-play {
+    box-shadow: 20px 20px 50px -30px #FFC1D5,inset 0 0 2rem rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+    #cards-section {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #cards-section > .cards {
+        width: 250px;
+    }
+}

@@ -31,6 +31,10 @@
         <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/landing-page-01/index.html" target="_blank">Clique aqui para abrir!</a>
             <p><strong>Data</strong>: 10/06/2023</p>
     </li>
+    <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/photo-gallery/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 13/06/2023</p>
+    </li>
 </ol>
 
 <h2>Como Contribuir</h2>

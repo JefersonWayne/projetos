@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* stylesheets for colors */
+
+:root {
+    --white: rgb(255, 255, 255);
+    --light-gray: rgb(214, 226, 240);
+    --grayish-blue: rgb(123, 135, 157);
+    --dark-blue: rgb(31, 50, 81);
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* stylesheets for typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    font-family: 'Outfit';
+}

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@import url('../../global.css');
+
+/* dedicated stylesheet for mobile index.html */
+
+body {
+    flex-direction: column;
+}
+
+main {
+    flex-direction: column;
+    width: 100vw;
+    max-width: 30rem;
+    height: auto;
+}
+
+main > section {
+    width: 100%;
+    height: 50%;
+}
+
+#summary-left {
+    border-radius: 0 0 1.5rem 1.5rem;
+    position: relative;
+}
+
+#summary-right {
+    border-radius: 0rem 0rem 1.5rem 1.5rem;
+    position: relative;
+    top: -1.3rem;
+    left: 0;
+}

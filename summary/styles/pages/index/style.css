@@ -19,7 +19,7 @@ main {
     flex-wrap: nowrap;
     flex-direction: row;
     width: 38rem;
-    height: 25rem;
+    height: 28rem;
     background-color: transparent;
 }
 
@@ -45,6 +45,7 @@ main > section {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--light-lavender);
+    margin-bottom: 1.5rem;
 }
 
 #summary-left > div {
@@ -56,6 +57,7 @@ main > section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 1.5rem;
 }
 
 #summary-left > div > h2 {
@@ -72,6 +74,7 @@ main > section {
 #summary-left > h2 {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 1.5rem;
 }
 
 #summary-left > h3 {
@@ -79,6 +82,7 @@ main > section {
     font-weight: normal;
     color: var(--light-lavender);
     width: 60%;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -92,13 +96,14 @@ main > section {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding: 1.5rem 1.5rem 1.5rem 3rem;
+    padding: 1.5rem 1.5rem 1.5rem 2.7rem;
 }
 
 #summary-right > h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: var(--dark-gray-blue);
+    margin-bottom: 1rem;
 }
 
 #summary-right > div {
@@ -153,6 +158,7 @@ main > section {
 #summary-right > div#visual {
     color: var(--Cobalt-blue);
     background-color: hsla(234, 85%, 45%, 0.1);
+    margin-bottom: 2rem;
 }
 
 #summary-right > button {

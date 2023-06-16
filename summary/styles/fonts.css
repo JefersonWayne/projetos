@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* dedicated style sheet for typography */
+
+@font-face {
+    font-family: 'hg';
+    src: url(../results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}

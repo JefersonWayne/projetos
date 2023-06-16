@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* dedicated stylesheet for global settings */
+
+@import url('colors.css');
+@import url('fonts.css');
+@import url('normalize.css');
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'hg', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    cursor: default;
+}
+
+html, body {
+    background-color: var(--pale-blue);
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+}

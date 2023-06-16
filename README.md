@@ -35,6 +35,18 @@
         <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/photo-gallery/index.html" target="_blank">Clique aqui para abrir!</a>
             <p><strong>Data</strong>: 13/06/2023</p>
     </li>
+        <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/responsive-cards/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 14/06/2023</p>
+    </li>
+        <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/qr-code-component/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 15/06/2023</p>
+    </li>
+        <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/summary/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 16/06/2023</p>
+    </li>
 </ol>
 
 <h2>Como Contribuir</h2>

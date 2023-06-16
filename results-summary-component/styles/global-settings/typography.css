@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* style sheets for typography */
+
+@font-face {
+    font-family: 'hg-medium';
+    src: url('../../assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hg-bold';
+    src: url('../../assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hg-extra-bold';
+    src: url('../../assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+}

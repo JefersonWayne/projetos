@@ -107,13 +107,65 @@ main > section {
     justify-content: space-between;
 
     width: 100%;
-    background-color: #ffadad;
     height: 3rem;
     padding: 0rem 1rem;
     border-radius: 0.2rem;
     margin: 0.5rem 0;
 }
 
+#summary-right > div > span {
+    display: flex;
+}
+
+#summary-right > div > span > h2 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 0.4rem;
+}
+
 #summary-right > div > p {
     font-weight: bold;
+    color: hsl(224, 21%, 61%);
+    font-size: 0.9rem;
+}
+
+#summary-right > div > p > .bold-number {
+    font-weight: bold;
+    opacity: 1;
+    font-size: 1.1rem;
+    color: hsl(224, 30%, 27%);
+}
+
+#summary-right > div#reaction {
+    color: var(--Light-red);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+#summary-right > div#memory {
+    color: var(--Orangey-yellow);
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+#summary-right > div#verbal {
+    color: var(--Green-teal);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+#summary-right > div#visual {
+    color: var(--Cobalt-blue);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+#summary-right > button {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    font-weight: bold;
+    background-color: var(--dark-gray-blue);
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#summary-right > button:hover {
+    background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
 }

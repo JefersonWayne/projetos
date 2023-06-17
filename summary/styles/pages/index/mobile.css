@@ -11,7 +11,7 @@ body {
 main {
     flex-direction: column;
     width: 100vw;
-    max-width: 30rem;
+    max-width: 425px;
     height: auto;
 }
 

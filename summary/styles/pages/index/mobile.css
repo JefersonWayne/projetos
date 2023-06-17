@@ -17,7 +17,7 @@ main {
 
 main > section {
     width: 100%;
-    height: 50%;
+    height: auto;
 }
 
 #summary-left {
@@ -30,4 +30,5 @@ main > section {
     position: relative;
     top: -1.3rem;
     left: 0;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }

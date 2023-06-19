@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@import url('../../../global.css');
+
+/* dedicated stylesheet for mobile index.html */
+
+body {
+    padding: 5rem 0;
+}

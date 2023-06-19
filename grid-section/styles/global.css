@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* dedicated stylesheet for global settings */
+
+@import url('colors.css');
+@import url('fonts.css');
+@import url('normalize.css');
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 0.9rem;
+    cursor: default;
+}
+
+html, body {
+    background-color: var(--Light-grayish-blue);
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+main > .card {
+    padding: 1.5rem;
+    width: 90vw;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+main > .card > .user-section {
+    height: 3rem;
+    display: flex;
+}
+
+main > .card > .user-section > .userpicture > img {
+    border-radius: 50%;
+    border: 0.2rem solid rgba(255, 255, 255, 0.3);
+    height: 100%;
+}
+
+main > .card > .user-section > .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+main > .card > .user-section > .user > .username {
+    font-weight: bold;
+}
+
+main > .card > .user-section > .user > .verified {
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+main > .card > .comment-title {
+    margin: 3rem 0;
+}
+
+main > .card#card-one {
+    background-color: var(--Moderate-violet);
+    color: var(--Light-grayish-blue);
+}
+
+main > .card#card-two {
+    background-color: var(--Very-dark-grayish-blue);
+    color: var(--Light-grayish-blue);
+}
+
+main > .card#card-three {
+    background-color: var(--White);
+    color: var(--Very-dark-blackish-blue);
+}
+
+main > .card#card-four {
+    background-color: var(--White);
+    color: var(--Very-dark-blackish-blue);
+}
+
+main > .card#card-five {
+    background-color: var(--Very-dark-blackish-blue);
+    color: var(--Light-grayish-blue);
+}

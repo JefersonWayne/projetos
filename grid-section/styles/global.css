@@ -21,6 +21,7 @@ html, body {
 }
 
 body {
+    padding: 4rem;
     min-width: 100%;
     min-height: 100vh;
     display: flex;
@@ -36,7 +37,6 @@ main {
     justify-content: center;
     align-items: center;
     justify-items: center;
-    gap: 1rem;
 }
 
 main > .card {

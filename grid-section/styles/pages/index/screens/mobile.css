@@ -3,6 +3,24 @@
 @import url('../../../global.css');
 
 /* dedicated stylesheet for mobile index.html */
-body {
-    padding: 2rem;
+
+
+main {
+    gap: 0.5rem;
+}
+
+@media screen and (min-width: 500px) {
+
+    body {
+        padding: 5rem 0;
+    }
+
+    main {
+        grid-template-rows: repeat(auto, 50%);
+        grid-template-columns: repeat(2, 50%);
+        width: 90vw;
+        height: auto;
+        justify-content: normal;
+        gap: 1rem;
+    }
 }

@@ -47,6 +47,11 @@
         <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/summary/index.html" target="_blank">Clique aqui para abrir!</a>
             <p><strong>Data</strong>: 16/06/2023</p>
     </li>
+        </li>
+        <li>
+        <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/grid-section/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 19/06/2023</p>
+    </li>
 </ol>
 
 <h2>Como Contribuir</h2>

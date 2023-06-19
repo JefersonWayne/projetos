@@ -69,8 +69,14 @@ main > .card > .user-section > .user > .verified {
     color: rgba(255, 255, 255, 0.8);
 }
 
-main > .card > .comment-title {
-    margin: 3rem 0;
+main > .card > .comment-title > h1 {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+main > .card > .comment > h2 {
+    margin: 0.5rem 0;
+    font-weight: 300;
 }
 
 main > .card#card-one {
@@ -86,6 +92,11 @@ main > .card#card-two {
 main > .card#card-three {
     background-color: var(--White);
     color: var(--Very-dark-blackish-blue);
+}
+
+main > .card#card-three > .user-section > .user > .verified,
+main > .card#card-four > .user-section > .user > .verified {
+    color: rgb(25, 33, 46, 0.8);
 }
 
 main > .card#card-four {

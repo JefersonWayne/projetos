@@ -3,3 +3,6 @@
 @import url('../../../global.css');
 
 /* dedicated stylesheet for mobile index.html */
+body {
+    padding: 2rem;
+}

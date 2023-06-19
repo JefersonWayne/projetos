@@ -12,7 +12,7 @@
     box-sizing: border-box;
     font-weight: normal;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     cursor: default;
 }
 
@@ -40,11 +40,14 @@ main {
 }
 
 main > .card {
-    padding: 1.5rem;
+    padding: 1.9rem;
     width: 100%;
     height: 100%;
     border-radius: 0.6rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 main > .card > .user-section {
@@ -63,7 +66,7 @@ main > .card > .user-section > .user {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }
 
 main > .card > .user-section > .user > .username {
@@ -78,11 +81,15 @@ main > .card > .user-section > .user > .verified {
 main > .card > .comment-title > h1 {
     margin: 0.5rem 0;
     font-weight: bold;
+    text-align: left;
 }
 
 main > .card > .comment > h2 {
     margin: 0.5rem 0;
     font-weight: 300;
+    text-align: justify;
+    align-self: flex-end;
+    font-size: 0.95rem;
 }
 
 main > .card#card-one {
@@ -97,20 +104,20 @@ main > .card#card-two {
 
 main > .card#card-three {
     background-color: var(--White);
-    color: var(--Very-dark-blackish-blue);
+    color: var(--Very-dark-grayish-blue);
 }
 
 main > .card#card-three > .user-section > .user > .verified,
-main > .card#card-four > .user-section > .user > .verified {
+main > .card#card-five > .user-section > .user > .verified {
     color: rgb(25, 33, 46, 0.8);
 }
 
 main > .card#card-four {
-    background-color: var(--White);
-    color: var(--Very-dark-blackish-blue);
+    background-color: var(--Very-dark-blackish-blue);
+    color: var(--Light-grayish-blue);
 }
 
 main > .card#card-five {
-    background-color: var(--Very-dark-blackish-blue);
-    color: var(--Light-grayish-blue);
+    background-color: var(--White);
+    color: var(--Very-dark-grayish-blue);
 }

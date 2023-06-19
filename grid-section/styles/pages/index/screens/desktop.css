@@ -3,3 +3,38 @@
 @import url('../../../global.css');
 
 /* dedicated stylesheet for index.html */
+
+@media screen and (min-height: 601px) {
+    main {
+        grid-template-rows: repeat(2, 50%);
+        grid-template-columns: repeat(4, 25%);
+        width: 80vw;
+        height: 80vh;
+    }
+
+    main > .card:nth-child(1) {
+        grid-column: 1 / span 2;
+    }
+
+    main > .card:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    main > .card:nth-child(5) {
+        grid-row: 1 / span 2;
+        grid-column: 4;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    body {
+        padding: 5rem 0;
+    }
+    main {
+        grid-template-rows: repeat(auto, 50%);
+        grid-template-columns: repeat(2, 50%);
+        width: 90vw;
+        height: auto;
+        justify-content: normal;
+    }
+}

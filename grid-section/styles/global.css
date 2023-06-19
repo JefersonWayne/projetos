@@ -95,6 +95,10 @@ main > .card > .comment > h2 {
 main > .card#card-one {
     background-color: var(--Moderate-violet);
     color: var(--Light-grayish-blue);
+    background-image: url('../testimonials-grid-section-main/images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 85% 0;
+    background-size: 8rem;
 }
 
 main > .card#card-two {

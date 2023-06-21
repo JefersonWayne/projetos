@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+/* dedicated stylesheet for global settings */
+
+@import url('colors.css');
+@import url('fonts.css');
+@import url('normalize.css');
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    cursor: default;
+}
+
+body,html {
+    background-color: var(--Light-Grayish-Violet);
+}
+
+body {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: '';
+    background: linear-gradient(180deg, var(--Light-Magenta), var(--Light-Violet));
+    position: absolute;
+    left: -6rem;
+    top: 0;
+    width: 30%;
+    height: 90%;
+    border-radius: 0 0 15rem 15rem;
+    z-index: 2;
+}
+
+body::after {
+    content: '';
+    background: linear-gradient(180deg, var(--Light-Magenta), var(--Light-Violet));
+    position: absolute;
+    bottom: 0;
+    right: -6rem;
+    width: 30%;
+    height: 90%;
+    border-radius: 15rem 15rem 0 0;
+    opacity: 0.1;
+    z-index: 2;
+}
+
+main {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* smartphone */
+
+main > #smartphone-frame {
+    background-color: #FFF;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.15);
+    height: auto;
+    width: 290px;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    position: relative;
+    margin-right: 10rem;
+}
+
+main > #smartphone-frame::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    left: 4.2rem;
+    top: 0.2rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.8rem;
+}
+
+/* smartphone-header-screen*/
+
+#smartphone-frame > #smartphone-screen > #user-section {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
+    padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+    background: linear-gradient(to left, var(--Light-Magenta), var(--Light-Violet));
+    position: relative;
+    z-index: 3;
+}
+
+#smartphone-frame > #smartphone-screen > #user-section > .material-symbols-outlined {
+    color: white;
+    scale: 0.5;
+}
+
+#smartphone-frame > #smartphone-screen > #user-section > #more_vert {
+    margin-left: auto;
+}
+
+#smartphone-frame > #smartphone-screen > #user-section > #user-avatar {
+    width: 2rem;
+    border-radius: 50%;
+    border: 0.1rem solid #FFF;
+}
+
+#smartphone-frame > #smartphone-screen > #user-section > #username-box {
+    color: #FFF;
+    margin-left: 0.5rem;
+}
+
+#smartphone-frame > #smartphone-screen > #user-section > #username-box > #username {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+#smartphone-frame > #smartphone-screen > #user-section > #username-box > #username-info {
+    font-weight: lighter;
+    font-size: 0.6rem;
+    opacity: 0.5;
+}
+
+/* smartphone-chat */
+
+#smartphone-frame > #smartphone-screen > #chat {
+    background-color: var(--Light-Grayish-Violet);
+    padding: 0.7rem;
+    position: relative;
+}
+#smartphone-frame > #smartphone-screen > #chat > #chat-messages > .chat-message {
+    font-size: 0.55rem;
+    font-weight: normal;
+    line-height: 0.7rem;
+    padding: 0.4rem;
+    max-width: 50%;
+    text-align: left;
+    margin: 0.25rem 0;
+    display: block;
+    word-wrap: break-word;
+}
+#smartphone-frame > #smartphone-screen > #chat > #chat-messages > .chat-sender-message {
+    color: var(--Moderate-Violet);
+    border-radius: 0.5rem 0.5rem 0.5rem 0;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+#smartphone-frame > #smartphone-screen > #chat > #chat-messages > .chat-receiver-message {
+    margin-left: auto;
+    background-color: white;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem 0.5rem 0 0.5rem;
+}
+
+#smartphone-frame > #smartphone-screen > #chat > #chat-messages > .chat-receiver-message:nth-child(2) {
+    clear: both;
+}
+
+#smartphone-frame > #smartphone-screen > #chat > #chat-messages > .chat-receiver-message-image-multiple {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    height: auto;
+    margin: 0.5rem 0 0.5rem 6.7rem;
+}
+
+#smartphone-frame > #smartphone-screen > #chat > #chat-messages > .chat-receiver-message-image-multiple > img {
+    width: 2.5rem;
+    border-radius: 0.5rem;
+    margin: 0 0.2rem;
+}
+
+#chat > #chat-messages > .sender-box-choices {
+    height: 5rem;
+    max-width: 70%;
+}
+
+#chat > #chat-messages > .sender-box-choices > .choices {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    border-radius: 0.7rem 0.7rem 0.7rem 0;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background: linear-gradient(to right, var(--Light-Magenta), var(--Light-Violet));
+}
+
+#chat > #chat-messages > .sender-box-choices > .choices > .choice-checkbox {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin-right: 0.3rem;
+    position: relative;
+    top: -1px;
+}
+
+#chat > #chat-messages > .sender-box-choices > .choices > .choice-title {
+    font-size: 0.6rem;
+}
+
+#chat > #chat-messages > .sender-box-choices > .choices > .choice-value {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+/* keyboard */
+
+#keyboard-placeholder {
+    border-radius: 0 0 1.5rem 1.5rem;
+    background-color: var(--Light-Grayish-Violet);
+    padding: 0.7rem;
+}
+
+#keyboard-placeholder > #keyboard-button {
+    border-radius: 1rem;
+    height: 2.5rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#keyboard-placeholder > #keyboard-button::after {
+    content: 'Type a message...';
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 0.75rem;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+
+}
+
+/* Description */
+
+main > #description {
+    width: 25rem;
+}
+
+main > #description  > h1 {
+    color: var(--Very-Dark-Desaturated-Violet);
+    font-weight: bold;
+}
+
+main > #description  > p {
+    color: var(--Dark-Grayish-Violet);
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+

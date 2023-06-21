@@ -18,15 +18,15 @@
 
 body,html {
     background-color: var(--Light-Grayish-Violet);
+    overflow-x: hidden;
 }
 
 body {
-    max-width: 100%;
+    max-width: 100vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
     position: relative;
     z-index: 1;
 }
@@ -39,6 +39,7 @@ body::before {
     top: 0;
     width: 30%;
     height: 90%;
+    max-width: 300px;
     border-radius: 0 0 15rem 15rem;
     z-index: 2;
 }
@@ -48,12 +49,14 @@ body::after {
     background: linear-gradient(180deg, var(--Light-Magenta), var(--Light-Violet));
     position: absolute;
     bottom: 0;
-    right: -6rem;
+    right: -5rem;
     width: 30%;
     height: 90%;
+    max-width: 300px;
     border-radius: 15rem 15rem 0 0;
     opacity: 0.1;
     z-index: 2;
+    overflow: hidden;
 }
 
 main {
@@ -72,11 +75,13 @@ main > #smartphone-frame {
     background-color: #FFF;
     box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.15);
     height: auto;
-    width: 290px;
+    scale: 0.9;
+    max-width: 290px;
     border-radius: 2rem;
     padding: 0.8rem;
     position: relative;
-    margin-right: 10rem;
+    margin-right: 10%;
+    position: relative;
 }
 
 main > #smartphone-frame::before {
@@ -88,6 +93,7 @@ main > #smartphone-frame::before {
     width: 10rem;
     height: 2rem;
     border-radius: 0.8rem;
+    z-index: 2;
 }
 
 /* smartphone-header-screen*/
@@ -101,7 +107,7 @@ main > #smartphone-frame::before {
     padding: 2.5rem 0.5rem 0.5rem 0.5rem;
     background: linear-gradient(to left, var(--Light-Magenta), var(--Light-Violet));
     position: relative;
-    z-index: 3;
+    z-index: 1;
 }
 
 #smartphone-frame > #smartphone-screen > #user-section > .material-symbols-outlined {
@@ -238,6 +244,9 @@ main > #smartphone-frame::before {
     background-color: white;
     box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.1);
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #keyboard-placeholder > #keyboard-button::after {
@@ -247,13 +256,47 @@ main > #smartphone-frame::before {
     position: absolute;
     top: 35%;
     left: 5%;
+}
 
+#keyboard-placeholder > #keyboard-button > #send-message-button {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+    background-color: var(--Very-Dark-Desaturated-Violet);
+    border: none;
+    position: relative;
+}
+
+#keyboard-placeholder > #keyboard-button > #send-message-button::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 10px;
+    background-color: #FFF;
+    width: 13px;
+    height: 3px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+#keyboard-placeholder > #keyboard-button > #send-message-button::after {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 18px;
+    background-color: #FFF;
+    width: 13px;
+    height: 3px;
+    border-radius: 2px;
+    transform: rotate(140deg);
 }
 
 /* Description */
 
 main > #description {
-    width: 25rem;
+    width: 80vw;
+    max-width: 25rem;
 }
 
 main > #description  > h1 {

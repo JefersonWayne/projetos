@@ -3,3 +3,16 @@
 @import url('../../../global.css');
 
 /* dedicated stylesheet for mobile index.html */
+
+body {
+    padding-bottom: 2rem
+}
+
+main {
+    flex-direction: column;
+}
+
+main > #smartphone-frame {
+    margin-right: 0;
+    scale: 0.9;
+}

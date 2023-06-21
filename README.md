@@ -51,6 +51,7 @@
         <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/grid-section/index.html" target="_blank">Clique aqui para abrir!</a>
             <p><strong>Data</strong>: 19/06/2023</p>
     </li>
+    <li>
             <strong>Link</strong>: <a href="https://jefersonwayne.github.io/projetos/chat-app-css-illustration/index.html" target="_blank">Clique aqui para abrir!</a>
             <p><strong>Data</strong>: 21/06/2023</p>
     </li>

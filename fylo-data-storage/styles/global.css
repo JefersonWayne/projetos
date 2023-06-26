@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* dedicated stylesheet for global settings */
+
+@import url('colors.css');
+@import url('fonts.css');
+@import url('normalize.css');
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.875rem;
+    cursor: default;
+}
+
+body {
+ max-width: 100vw;
+ min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: url('../fylo-data-storage-component-master/images/bg-desktop.png') var(--Very-Dark-Blue) no-repeat;
+ background-size: 100vw 50vh;
+ background-position: left bottom;
+}
+
+#main-content {
+    display: flex;
+}
+
+#main-content > .box {
+    background-color: var(--Dark-Blue);
+    padding: 2rem;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+#main-content > #left-side-box {
+    margin-right: 2rem;
+    border-radius: 0.6rem 5rem 0.6rem 0.6rem;
+    width: 17rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+#main-content > #left-side-box > #logo {
+    width: 55%;
+}
+
+#main-content > #left-side-box > #icons-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-content > #left-side-box > #icons-nav > .icon {
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-left: 0.7em;
+    border-radius: 0.3rem;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+} 
+
+#main-content > #left-side-box > #icons-nav > .icon:nth-child(1) {
+    margin-left: 0em;
+}
+
+#main-content > #left-side-box > #icons-nav > .icon:hover {
+    background-color: hsl(228, 59%, 7%);
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.4);
+}
+
+#main-content > #left-side-box > #icons-nav > .icon:hover > img {
+    scale: 0.9;
+}
+
+#main-content > #left-side-box > #icons-nav > .icon > img {
+    cursor: pointer;
+    scale: 0.75;
+    transition: 0.2s;
+}

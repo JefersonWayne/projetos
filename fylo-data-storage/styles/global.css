@@ -22,15 +22,10 @@ body {
  display: flex;
  justify-content: center;
  align-items: center;
- background: url('../fylo-data-storage-component-master/images/bg-desktop.png') var(--Very-Dark-Blue) no-repeat;
- background-size: 100vw 50vh;
- background-position: left bottom;
 }
 
 #main-content {
     display: flex;
-    align-items: flex-end;
-    flex-direction: row;
 }
 
 #main-content > .box {
@@ -40,9 +35,7 @@ body {
 }
 
 #main-content > #left-side-box {
-    margin-right: 2rem;
     border-radius: 0.6rem 5rem 0.6rem 0.6rem;
-    width: 17rem;
     height: 10.5rem;
     display: flex;
     flex-direction: column;
@@ -94,7 +87,7 @@ body {
 }
 
 #main-content > #right-side-box {
-    width: 40rem;
+    max-width: 50rem;
     height: 8rem;
     position: relative;
     border-radius: 0.6rem;
@@ -111,8 +104,6 @@ body {
 #main-content > #right-side-box > #popup-storage-left {
     display: flex;
     position: absolute;
-    right: 2.5rem;
-    top: -2.2rem;
     padding: 1rem;
     font-weight: bold;
     background-color: rgba(255, 255, 255.7);
@@ -120,21 +111,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.3rem 0.3rem 0rem 0.3rem;
-}
-
-#main-content > #right-side-box > #popup-storage-left::before {
-    content: '';
-    position: absolute;
-    background-color: transparent;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 15px 15px 0;
-    border-color: transparent #ffffff transparent transparent;
-    
-    bottom: -0.9rem;
-    right: 0;
 }
 
 #main-content > #right-side-box > #popup-storage-left > #gb-left {

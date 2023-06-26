@@ -29,6 +29,8 @@ body {
 
 #main-content {
     display: flex;
+    align-items: flex-end;
+    flex-direction: row;
 }
 
 #main-content > .box {
@@ -41,16 +43,17 @@ body {
     margin-right: 2rem;
     border-radius: 0.6rem 5rem 0.6rem 0.6rem;
     width: 17rem;
-    height: 10rem;
+    height: 10.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: nowrap;
 }
 
 #main-content > #left-side-box > #logo {
     width: 55%;
+    margin-bottom: 1rem;
 }
 
 #main-content > #left-side-box > #icons-nav {
@@ -88,4 +91,105 @@ body {
     cursor: pointer;
     scale: 0.75;
     transition: 0.2s;
+}
+
+#main-content > #right-side-box {
+    width: 40rem;
+    height: 8rem;
+    position: relative;
+    border-radius: 0.6rem;
+}
+
+#main-content > #right-side-box > #storage-left {
+    font-weight: 300;
+}
+
+#main-content > #right-side-box > #storage-left > #gb-used {
+    font-weight: bold;
+}
+
+#main-content > #right-side-box > #popup-storage-left {
+    display: flex;
+    position: absolute;
+    right: 2.5rem;
+    top: -2.2rem;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255.7);
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem 0.3rem 0rem 0.3rem;
+}
+
+#main-content > #right-side-box > #popup-storage-left::before {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 0;
+    border-color: transparent #ffffff transparent transparent;
+    
+    bottom: -0.9rem;
+    right: 0;
+}
+
+#main-content > #right-side-box > #popup-storage-left > #gb-left {
+    font-size: 2rem;
+    position: relative;
+    top: -2px;
+    color: rgba(0, 0, 0);
+    margin-right: 0.5rem;
+}
+
+#main-content > #right-side-box > #storage-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content > #right-side-box > #storage-bar > #storage-bar-value {
+    margin: 1rem 0 0.5rem 0;
+    width: 100%;
+    height: 1.5rem;
+    background-color: hsl(227, 61%, 13%);
+    border-radius: 1rem;
+    position: relative;
+}
+
+#main-content > #right-side-box > #storage-bar > #storage-bar-value::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    width: calc(99% - 18.5%);
+    height: 1.2rem;
+    background: linear-gradient(to right, var(--Gradient-1), var(--Gradient-2));
+    border-radius: 1rem;
+}
+
+#main-content > #right-side-box > #storage-bar > #storage-bar-value::after {
+    content: '';
+    position: absolute;
+    right: calc(18.5% + 1%);
+    top: 4px;
+    width: 0.9rem;
+    height: 0.9rem;
+    background: white;
+    border-radius: 50%;
+}
+
+#main-content > #right-side-box > #storage-bar > #storage-ratio {
+    display: flex;
+}
+
+#main-content > #right-side-box > #storage-bar > #storage-ratio > #min-storage {
+    display: flex;
+}
+
+#main-content > #right-side-box > #storage-bar > #storage-ratio > #max-storage {
+    margin-left: auto;
+    display: flex;
 }

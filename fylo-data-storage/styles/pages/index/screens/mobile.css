@@ -41,7 +41,7 @@ body {
 #main-content > #right-side-box > #popup-storage-left {
     display: flex;
     position: absolute;
-    left: 50%;
+    left: 46.5%;
     top: 75%;
     transform: translate(-50%, 0);
     padding: 1rem;
@@ -52,4 +52,14 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 295px){
+    #main-content > #right-side-box {
+        height: 10rem;
+    }
+
+    #main-content > #right-side-box > #popup-storage-left {
+        display: none;
+    }
 }

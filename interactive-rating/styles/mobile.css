@@ -1,0 +1,41 @@
+@import url('desktop.css');
+
+
+body {
+    max-width: auto;
+    box-sizing: content-box;
+}
+
+main {
+    min-width: 375px;
+    width: 70vw;
+    max-width: 400px;
+    height: 400px; 
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        border-radius: 0px;
+        min-width: 100vw;
+        padding: 1rem;
+    }
+
+    main > section#rating-state {
+        position: relative;
+    }
+    main > section#rating-state > div#star-circle {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    main > section#rating-state > h1#title {
+        display: none;
+    }
+    
+    main > section > p {
+        display: none;
+    }
+    
+    
+}

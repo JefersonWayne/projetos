@@ -1,12 +1,12 @@
-@import url('global/normalize.css'); /* normalize */
+@import url("global/normalize.css"); /* normalize */
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap'); /* Overpass */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"); /* Overpass */
 
 :root {
     /* Primary */
 
     --Orange: #fb7413;
-    
+
     /* Neutral */
 
     --Light-Grey: #959eac;
@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Overpass', sans-serif;
+    font-family: "Overpass", sans-serif;
     font-weight: 400;
     font-size: 1rem;
 }
@@ -41,15 +41,19 @@ main {
     width: 400px;
     height: 400px;
 
-    background: linear-gradient(0deg, rgba(18,20,23,1) 0%, rgba(37,45,55,1) 100%);
-    color: #FFF;
+    background: linear-gradient(
+        0deg,
+        rgba(18, 20, 23, 1) 0%,
+        rgba(37, 45, 55, 1) 100%
+    );
+    color: #fff;
 
-     border-radius: 1.5rem;
-     padding: 1.5rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
 
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 button {
@@ -75,7 +79,7 @@ main > section#rating-state > div#star-circle {
     border-radius: 50%;
 
     margin-bottom: 2rem;
-} 
+}
 
 main > section#rating-state > h1#title {
     margin: 0.5rem 0;
@@ -88,13 +92,14 @@ main > section > p {
 
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
-} 
+}
 
 main > section#rating-state > #buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 
@@ -113,13 +118,12 @@ main > section#rating-state > #buttons > button {
     justify-content: center;
     flex-direction: row;
 
-
     transition: 0.5s;
 }
 
 main > section#rating-state > #buttons > button:hover {
     background-color: var(--Medium-Grey);
-    color: #FFF;
+    color: #fff;
 }
 
 main > section#rating-state > #buttons > button.selected {
@@ -129,8 +133,8 @@ main > section#rating-state > #buttons > button.selected {
 
 main > section#rating-state > #submit {
     background-color: var(--Orange);
-    color: #FFF;
-    
+    color: #fff;
+
     width: 100%;
     height: 2.7rem;
 
@@ -143,13 +147,13 @@ main > section#rating-state > #submit {
 }
 
 main > section#rating-state > #submit:hover {
-    background-color: #FFF;
+    background-color: #fff;
     color: var(--Orange);
 }
 
 main > section#thank-you-state {
     display: none;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -171,7 +175,7 @@ main > section#thank-you-state > h2#selected-rating {
 
 main > section#thank-you-state > p#thank-you {
     font-size: 1.5rem;
-    color: #FFF;
+    color: #fff;
     font-weight: bold;
     margin: 0.5rem 0;
 }

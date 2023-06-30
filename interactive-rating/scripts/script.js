@@ -38,6 +38,7 @@ function setRating(rating) {
 
     var selected_button = document.getElementById("rating-" + rating); // Get the selected button based on the rating
     selected_button.setAttribute('class', 'selected'); // Add the 'selected' class to the selected button
+
     var rating_value = document.querySelector("span#rating");
     rating_value.innerHTML = rating;
 }
@@ -55,7 +56,7 @@ function onSubmit() {
     // Check if a button is selected
     if (selected_button == undefined) {
         // Display an alert if no button is selected
-        window.alert("Dear user, it seems that you haven't selected any rating. Please make sure to choose a rating before submitting. Thank you!")
+        window.alert("Dear user, it seems that you haven't selected any rating. Please make sure to choose a rating before submitting. Thank you!");
     } else {
         // Hide the rating section and display the thank-you section
         section_1.style.display = 'none';

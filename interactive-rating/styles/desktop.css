@@ -77,7 +77,7 @@ main > section#rating-state > h1#title {
     margin: 0.5rem 0;
 }
 
-main > section#rating-state > p {
+main > section > p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.9rem;
     text-align: justify;
@@ -145,4 +145,7 @@ main > section#rating-state > #submit:hover {
 
 main > section#thank-you-state {
     display: none;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
 }

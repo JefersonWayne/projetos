@@ -36,3 +36,19 @@ function setRating(rating) {
 }
 
 // Submit Click
+
+var submit = document.querySelector("button#submit");
+submit.addEventListener('click', onSubmit);
+
+function onSubmit() {
+    var section_1 = document.querySelector("section#rating-state");
+    var section_2 = document.querySelector("section#thank-you-state");
+    var selected_button = document.querySelector("button.selected");
+
+    if (selected_button == undefined) {
+        window.alert("Dear user, it seems that you haven't selected any rating. Please make sure to choose a rating before submitting. Thank you!")
+    } else {
+        section_1.style.display = 'none';
+        section_2.setAttribute('style', 'display: flex;');
+    }
+}

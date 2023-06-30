@@ -57,6 +57,10 @@ button {
     padding-top: 0.2rem;
 }
 
+main > section#rating-state {
+    display: block;
+}
+
 main > section#rating-state > div#star-circle {
     display: flex;
     align-items: center;
@@ -148,4 +152,26 @@ main > section#thank-you-state {
     flex-direction: column; 
     align-items: center;
     justify-content: center;
+}
+
+main > section#thank-you-state > img {
+    margin-bottom: 1.5rem;
+}
+
+main > section#thank-you-state > h2#selected-rating {
+    color: var(--Orange);
+    background-color: var(--Dark-Blue);
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.4rem 0.7rem 0 0.7rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1.3rem;
+    height: 1.7rem;
+}
+
+main > section#thank-you-state > p#thank-you {
+    font-size: 1.5rem;
+    color: #FFF;
+    font-weight: bold;
+    margin: 0.5rem 0;
 }

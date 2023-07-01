@@ -59,6 +59,10 @@
             <strong>Link</strong>: <a href="https://flaviojeferson.github.io/projetos/fylo-data-storage/index.html" target="_blank">Clique aqui para abrir!</a>
             <p><strong>Data</strong>: 26/06/2023</p>
     </li>
+<li>
+            <strong>Link</strong>: <a href="https://flaviojeferson.github.io/projetos/interactive-rating/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 26/06/2023</p>
+    </li>
 </ol>
 
 <h2>Como Contribuir</h2>

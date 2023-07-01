@@ -3,3 +3,36 @@
 @import url('desktop.css');
 
 /* Mobile screens */
+
+section#faq {
+    flex-direction: column;
+    height: auto;
+    padding: 3rem 1rem;
+    margin: 17rem 0 3rem 0;
+}
+
+section#faq > .faq-image {
+    width: 100%;
+    height: 8rem;
+    overflow: visible;
+    position: relative;
+}
+
+section#faq > .faq-image > img {
+    position: relative;
+    min-width: 200px;
+    width: 80%;
+    max-width: 400px;
+    left: 50%;
+    top: -4.5rem;
+
+    transform: translate(-50%, -50%);
+}
+
+section#faq > .faq-content {
+    width: 100%;
+}
+
+section#faq > .faq-content > .div-title {
+    text-align: center;
+}

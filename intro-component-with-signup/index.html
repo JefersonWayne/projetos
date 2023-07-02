@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 700px)">
+  <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 701px)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="intro-component-with-signup-form-master/images/favicon-32x32.png">
+  <title>Intro component with sign up form</title>
+</head>
+<body>
+  <main>
+    
+    <section id="msg">
+      <h1 id="title">Learn to code by watching others</h1>
+      <p id="description">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+
+    <section id="form">
+      <div id="promo">
+        <h2><strong>Try it free 7 days</strong> then $20/mo. thereafter</h2>
+      </div>
+
+      <form method="POST" action="cadastro.php" autocomplete="on">
+        <input class="data" type="text" id="firstName" placeholder="First Name" minlength="3" maxlength="10"  required autocomplete="name"><br>
+        <input class="data" type="text" id="lastName" placeholder="Last Name" minlength="3" maxlength="10"  required autocomplete="family-name"><br>
+        <input class="data" type="email" id="emailAddress" placeholder="Email Address" minlength="8" maxlength="45" required autocomplete="email"><br>
+        <input class="data" type="password" id="userPassword" placeholder="Password" minlength="8" maxlength="16" autocomplete="new-password" required><br>
+        <input type="submit" value="Claim your free trial">
+        <p id="terms-services">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="scripts/cadastro.js"></script>
+</body>
+</html>

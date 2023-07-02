@@ -59,9 +59,17 @@
             <strong>Link</strong>: <a href="https://flaviojeferson.github.io/projetos/fylo-data-storage/index.html" target="_blank">Clique aqui para abrir!</a>
             <p><strong>Data</strong>: 26/06/2023</p>
     </li>
-<li>
+    <li>
             <strong>Link</strong>: <a href="https://flaviojeferson.github.io/projetos/interactive-rating/index.html" target="_blank">Clique aqui para abrir!</a>
             <p><strong>Data</strong>: 26/06/2023</p>
+    </li>
+        <li>
+            <strong>Link</strong>: <a href="https://flaviojeferson.github.io/projetos/faq-accordion-card/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 30/06/2023</p>
+    </li>
+        <li>
+            <strong>Link</strong>: <a href="https://flaviojeferson.github.io/projetos/intro-component-with-signup/index.html" target="_blank">Clique aqui para abrir!</a>
+            <p><strong>Data</strong>: 02/07/2023</p>
     </li>
 </ol>
 

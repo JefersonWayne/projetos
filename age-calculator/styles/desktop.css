@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@import url('normalize.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Desktop screens */
+
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+    padding: 0rem;
+    margin: 0rem;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+
+    cursor: default;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: hsl(0, 0%, 94%);
+
+    padding: 2rem;
+}
+
+main {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 1.5rem;
+    border-radius: 1rem 1rem 7rem 1rem;
+}
+
+main > #form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    margin-right: 6rem;
+}
+
+main > #form > .input {
+    margin-right: 1rem;
+}
+
+main > #form > .input > label {
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+main > #form > .input > input {
+    width: 7rem;
+    height: 3rem;
+    margin-top: 0.3rem;
+    border-radius: 0.3rem;
+    padding: 0rem 0.8rem;
+    font-weight: bold;
+    border: 1px solid rgb(219, 219, 219);
+    cursor: pointer;
+}
+
+main > #form > .input > input:focus {
+    border: 1px solid hsl(0, 1%, 44%);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main > #button_submit {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    margin-left: auto;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+main > #button_submit:hover {
+    background-color: hsl(259, 54%, 38%);
+}
+
+main > #button_submit > img {
+    width: 50%;
+    cursor: pointer;
+}
+
+main > #result > h2 {
+    font-size: 4rem;
+    color: hsl(0, 0%, 8%);
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+main > #result > h2 > strong > span {
+    color: hsl(259, 100%, 65%);
+}

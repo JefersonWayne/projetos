@@ -51,21 +51,21 @@ main {
     box-shadow: 0rem 0rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
-main > #form {
+main>#form {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     border-bottom: 1px solid hsl(0, 0%, 86%);
     padding-bottom: 2rem;
     width: 90%;
-    margin: 0 0 2rem 0;
+    height: 7rem;
+    margin-bottom: 1rem;
 }
 
-main > #form > .input {
+main>#form>.input {
     margin-right: 1rem;
 }
 
-main > #form > .input > label {
+main>#form>.input>label {
     font-weight: 700;
     color: hsl(0, 1%, 44%);
     text-transform: uppercase;
@@ -74,7 +74,7 @@ main > #form > .input > label {
     cursor: pointer;
 }
 
-main > #form > .input > input {
+main>#form>.input>input {
     width: 7rem;
     height: 3rem;
     margin-top: 0.3rem;
@@ -85,11 +85,19 @@ main > #form > .input > input {
     cursor: pointer;
 }
 
-main > #form > .input > input:focus {
+main>#form>.input>input:focus {
     border: 1px solid hsl(0, 1%, 44%);
 }
 
-main > #form > .input > .fieldErrorText {
+main>#form>.input>label.fieldErrorText {
+    color: hsl(0, 100%, 67%);
+}
+
+main>#form>.input>input.fieldErrorText {
+    border-color: hsl(0, 100%, 67%);
+}
+
+main>#form>.input>p.fieldErrorText {
     margin-top: 0.5rem;
     font-size: 0.5rem;
     color: hsl(0, 100%, 67%);
@@ -102,7 +110,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-main > #button_submit {
+main>#button_submit {
     width: 3.5rem;
     height: 3.5rem;
     background-color: hsl(259, 100%, 65%);
@@ -111,25 +119,25 @@ main > #button_submit {
     transition: 300ms;
     position: absolute;
     right: 1.5rem;
-    top: calc(1.5rem + 2rem + 2.77rem);
+    top: calc(1.5rem + 2rem + 3.2rem);
 }
 
-main > #button_submit:hover {
+main>#button_submit:hover {
     background-color: hsl(259, 65%, 25%);
 }
 
-main > #button_submit > img {
+main>#button_submit>img {
     width: 50%;
     cursor: pointer;
 }
 
-main > #result > h2 {
+main>#result>h2 {
     font-size: 4rem;
     color: hsl(0, 0%, 8%);
     font-style: italic;
     margin-bottom: 0;
 }
 
-main > #result > h2 > strong > span {
+main>#result>h2>strong>span {
     color: hsl(259, 100%, 65%);
 }

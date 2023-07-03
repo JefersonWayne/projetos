@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 700px)">
-  <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 701px)">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="age-calculator-app-main/assets/images/favicon-32x32.png">
-  <title>Age calculator app</title>
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 700px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 701px)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="age-calculator-app-main/assets/images/favicon-32x32.png">
+    <title>Age calculator app</title>
 </head>
+
 <body>
-  <main>
-    <section id="form">
-      <div class="input" id="divDay">
-        <label for="inputDay">Day</label><br>
-        <input type="number" id="inputDay" placeholder="DD">
-      </div>
+    <main>
+        <section id="form">
+            <div class="input" id="divDay">
+                <label for="inputDay">Day</label><br>
+                <input type="number" id="inputDay" placeholder="DD">
+            </div>
 
-      <div class="input" id="divMonth">
-        <label for="inputMonth">Month</label><br>
-        <input type="number" id="inputMonth" placeholder="MM">
-      </div>
+            <div class="input" id="divMonth">
+                <label for="inputMonth">Month</label><br>
+                <input type="number" id="inputMonth" placeholder="MM">
+            </div>
 
-      <div class="input" id="divYear">
-        <label for="inputYear">Year</label><br>
-        <input type="number" id="inputYear" placeholder="YYYY">
-      </div>
-    </section>
-    <button id="button_submit" onclick="calculateAge()"><img src="age-calculator-app-main/assets/images/icon-arrow.svg"></button>
+            <div class="input" id="divYear">
+                <label for="inputYear">Year</label><br>
+                <input type="number" id="inputYear" placeholder="YYYY">
+            </div>
+        </section>
+        
+        <button id="button_submit" onclick="calculateAge()"><img src="age-calculator-app-main/assets/images/icon-arrow.svg"></button>
 
-    <section id="result">
-      <h2><strong><span id="years-value">--</span> years</strong></h2>
-      <h2><strong><span id="months-value">--</span> months</strong></h2>
-      <h2><strong><span id="days-value">--</span> days</strong></h2>
-    </section>
-  </main>
-  <script src="scripts/error.js"></script>
+        <section id="result">
+            <h2><strong><span id="years-value">--</span> years</strong></h2>
+            <h2><strong><span id="months-value">--</span> months</strong></h2>
+            <h2><strong><span id="days-value">--</span> days</strong></h2>
+        </section>
+    </main>
+    <script src="scripts/script.js"></script>
+
 </body>
+
 </html>

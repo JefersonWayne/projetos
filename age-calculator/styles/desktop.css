@@ -19,6 +19,7 @@
     text-decoration: none;
 
     cursor: default;
+    user-select: none;
 }
 
 body {
@@ -42,16 +43,22 @@ main {
     justify-content: center;
     align-items: flex-start;
 
+    width: 34.375rem;
     padding: 1.5rem;
     border-radius: 1rem 1rem 7rem 1rem;
+    position: relative;
+
+    box-shadow: 0rem 0rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
 main > #form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 1rem;
-    margin-right: 6rem;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    padding-bottom: 2rem;
+    width: 90%;
+    margin: 0 0 2rem 0;
 }
 
 main > #form > .input {
@@ -63,7 +70,7 @@ main > #form > .input > label {
     color: hsl(0, 1%, 44%);
     text-transform: uppercase;
     font-size: 0.7rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     cursor: pointer;
 }
 
@@ -82,10 +89,17 @@ main > #form > .input > input:focus {
     border: 1px solid hsl(0, 1%, 44%);
 }
 
+main > #form > .input > .fieldErrorText {
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 main > #button_submit {
@@ -93,13 +107,15 @@ main > #button_submit {
     height: 3.5rem;
     background-color: hsl(259, 100%, 65%);
     border-radius: 50%;
-    margin-left: auto;
     cursor: pointer;
-    transition: background-color 300ms;
+    transition: 300ms;
+    position: absolute;
+    right: 1.5rem;
+    top: calc(1.5rem + 2rem + 2.77rem);
 }
 
 main > #button_submit:hover {
-    background-color: hsl(259, 54%, 38%);
+    background-color: hsl(259, 65%, 25%);
 }
 
 main > #button_submit > img {

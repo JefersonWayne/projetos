@@ -13,20 +13,20 @@
     <section id="form">
       <div class="input" id="divDay">
         <label for="inputDay">Day</label><br>
-        <input type="number" minlength="1" maxlength="2" id="inputDay" placeholder="DD">
+        <input type="number" id="inputDay" placeholder="DD">
       </div>
 
       <div class="input" id="divMonth">
         <label for="inputMonth">Month</label><br>
-        <input type="number" minlength="1" maxlength="2" id="inputMonth" placeholder="MM">
+        <input type="number" id="inputMonth" placeholder="MM">
       </div>
 
       <div class="input" id="divYear">
         <label for="inputYear">Year</label><br>
-        <input type="number" minlength="4" maxlength="4" id="inputYear" placeholder="YYYY">
+        <input type="number" id="inputYear" placeholder="YYYY">
       </div>
     </section>
-    <button id="button_submit"><img src="age-calculator-app-main/assets/images/icon-arrow.svg"></button>
+    <button id="button_submit" onclick="calculateAge()"><img src="age-calculator-app-main/assets/images/icon-arrow.svg"></button>
 
     <section id="result">
       <h2><strong><span id="years-value">--</span> years</strong></h2>
@@ -34,5 +34,6 @@
       <h2><strong><span id="days-value">--</span> days</strong></h2>
     </section>
   </main>
+  <script src="scripts/error.js"></script>
 </body>
 </html>

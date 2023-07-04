@@ -3,3 +3,80 @@
 @import url('desktop.css');
 
 /* Mobile screens */
+
+
+body {
+    padding: 1rem;
+}
+
+main {
+    width: 100%;
+    padding: 1.5rem 2rem;
+}
+
+main>#form {
+    width: 100%;
+    height: 8rem;
+    margin-bottom: 2rem;
+}
+
+main>#form>.input>label {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+main>#form>.input>input {
+    width: 100%;
+    margin-top: 0.3rem;
+    border-radius: 0.3rem;
+    padding: 0rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+main>#form>.input>p.fieldErrorText {
+    margin-top: 0.3;
+    font-size: 0.7rem;
+    width: auto;
+}
+
+main>#button_submit {
+    width: 3rem;
+    height: 3rem;
+    right: 50%;
+    top: 8rem;
+
+    transform: translate(50%, 0);
+}
+
+main>#button_submit>img {
+    width: 60%;
+}
+
+main>#result>h2 {
+    font-size: 3.5rem;
+}
+
+
+@media screen and (max-width: 370px) {
+    main>#form {
+        flex-direction: column;
+        height: 18rem;
+    }
+    main>#form>.input {
+        margin-bottom: 1rem;
+    }
+    main>#button_submit {
+        top: 18.1rem;
+    }
+
+    main>#result>h2 {
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 300px) {
+    main>#result>h2 {
+        margin-bottom: 2rem;
+    }
+}

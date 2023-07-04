@@ -33,16 +33,23 @@ function calculateAge() {
   const validateInput = (value, input, errorMessage) => {
     if (value <= 0 || input.value.length <= 0 || value > daysRange) {
       showError(input, errorMessage);
+      return false;
     }
+    return true;
   };
 
-  validateInput(dayValue, dayInput, "Must be a valid day");
-  validateInput(monthValue, monthInput, "Must be a valid month");
-  if (yearValue <= 0 || yearInput.value.length <= 0) {
-    showError(yearInput, "This field is required");
-  }
+  const allInputsValid = () => {
+    let isValid = true;
+    isValid = validateInput(dayValue, dayInput, "Must be a valid day") && isValid;
+    isValid = validateInput(monthValue, monthInput, "Must be a valid month") && isValid;
+    isValid = yearValue > 0 && yearInput.value.length > 0 && isValid;
+    if (!isValid) {
+      showError(yearInput, "This field is required");
+    }
+    return isValid;
+  };
 
-  if (divDay.querySelectorAll(".fieldErrorText").length > 0 || divMonth.querySelectorAll(".fieldErrorText").length > 0 || divYear.querySelectorAll(".fieldErrorText").length > 0) {
+  if (!allInputsValid()) {
     return;
   }
 

@@ -11,6 +11,7 @@ body {
 
 main {
     width: 100%;
+    min-width: 300px;
     padding: 1.5rem 2rem;
 }
 
@@ -62,9 +63,11 @@ main>#result>h2 {
         flex-direction: column;
         height: 18rem;
     }
+
     main>#form>.input {
         margin-bottom: 1rem;
     }
+
     main>#button_submit {
         top: 18.1rem;
     }
@@ -72,11 +75,5 @@ main>#result>h2 {
     main>#result>h2 {
         font-size: 2.5rem;
     }
-    
-}
 
-@media screen and (max-width: 300px) {
-    main>#result>h2 {
-        margin-bottom: 2rem;
-    }
 }

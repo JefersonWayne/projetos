@@ -1,76 +1,65 @@
 function calculateAge() {
-    var resetFields = document.querySelectorAll(".fieldErrorText");
-
-    resetFields.forEach(element => {
-        element.classList.remove("fieldErrorText");
-        if (element.tagName.toLowerCase() === "p") {
-            element.parentNode.removeChild(element);
-        }
-    });
-
-    var divDay = document.querySelector("#divDay");
-    var divMonth = document.querySelector("#divMonth");
-    var divYear = document.querySelector("#divYear");
-
-    var dayInput = divDay.querySelector("#inputDay");
-    var monthInput = divMonth.querySelector("#inputMonth");
-    var yearInput = divYear.querySelector("#inputYear");
-
-    var dayValue = Number(dayInput.value);
-    var monthValue = Number(monthInput.value);
-    var yearValue = Number(yearInput.value);
-
-    var daysRange = 31;
-    var monthsRange = 12;
-
-    var classInput = document.getElementsByClassName("input");
-
-    // Verificação básica para o campo de dia (day)
-    if (dayValue <= 0 || dayInput.value.length <= 0 || dayValue > daysRange) {
-        let fieldError = document.createElement("p");
-        fieldError.textContent = "";
-        classInput[0].appendChild(fieldError);
-
-        divDay.querySelector("label").classList.add("fieldErrorText");
-        dayInput.classList.add("fieldErrorText");
-        fieldError.classList.add("fieldErrorText");
-
-        if (dayInput.value.length <= 0) {
-            fieldError.textContent = "This field is required";
-        } else if (dayValue <= 0 || dayValue > daysRange) {
-            fieldError.textContent = "Must be a valid day";
-        }
+  const resetFields = document.querySelectorAll(".fieldErrorText");
+  resetFields.forEach(element => {
+    element.classList.remove("fieldErrorText");
+    if (element.tagName.toLowerCase() === "p") {
+      element.parentNode.removeChild(element);
     }
+  });
 
-    // Verificação básica para o campo de mês (month)
-    if (monthValue <= 0 || monthInput.value.length <= 0 || monthValue > monthsRange) {
-        let fieldError = document.createElement("p");
-        fieldError.textContent = "";
-        classInput[1].appendChild(fieldError);
+  const getInputValue = (element) => Number(element.value);
 
-        divMonth.querySelector("label").classList.add("fieldErrorText");
-        monthInput.classList.add("fieldErrorText");
-        fieldError.classList.add("fieldErrorText");
+  const showError = (input, errorMessage) => {
+    const fieldError = document.createElement("p");
+    fieldError.textContent = errorMessage;
+    input.parentNode.appendChild(fieldError);
+    input.parentNode.querySelector("label").classList.add("fieldErrorText");
+    input.classList.add("fieldErrorText");
+    fieldError.classList.add("fieldErrorText");
+  };
 
-        if (monthInput.value.length <= 0) {
-            fieldError.textContent = "This field is required";
-        } else if (monthValue <= 0 || monthValue > monthsRange) {
-            fieldError.textContent = "Must be a valid month";
-        }
+  const divDay = document.querySelector("#divDay");
+  const divMonth = document.querySelector("#divMonth");
+  const divYear = document.querySelector("#divYear");
+  const dayInput = divDay.querySelector("#inputDay");
+  const monthInput = divMonth.querySelector("#inputMonth");
+  const yearInput = divYear.querySelector("#inputYear");
+  const dayValue = getInputValue(dayInput);
+  const monthValue = getInputValue(monthInput);
+  const yearValue = getInputValue(yearInput);
+
+  const daysRange = 30.4;
+
+  const validateInput = (value, input, errorMessage) => {
+    if (value <= 0 || input.value.length <= 0 || value > daysRange) {
+      showError(input, errorMessage);
     }
+  };
 
-    // Verificação básica para o campo de ano (year)
-    if (yearValue <= 0 || yearInput.value.length <= 0) {
-        let fieldError = document.createElement("p");
-        fieldError.textContent = "";
-        classInput[2].appendChild(fieldError);
+  validateInput(dayValue, dayInput, "Must be a valid day");
+  validateInput(monthValue, monthInput, "Must be a valid month");
+  if (yearValue <= 0 || yearInput.value.length <= 0) {
+    showError(yearInput, "This field is required");
+  }
 
-        divYear.querySelector("label").classList.add("fieldErrorText");
-        yearInput.classList.add("fieldErrorText");
-        fieldError.classList.add("fieldErrorText");
+  if (divDay.querySelectorAll(".fieldErrorText").length > 0 || divMonth.querySelectorAll(".fieldErrorText").length > 0 || divYear.querySelectorAll(".fieldErrorText").length > 0) {
+    return;
+  }
 
-        if (yearInput.value.length <= 0) {
-            fieldError.textContent = "This field is required";
-        }
-    }
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.getMonth() + 1;
+  const currentDay = currentDate.getDate();
+  const inputYear = getInputValue(yearInput);
+  const inputMonth = getInputValue(monthInput);
+  const inputDay = getInputValue(dayInput);
+  const totalDays = (currentYear - inputYear) * 365 + (currentMonth - inputMonth) * 30 + (currentDay - inputDay);
+
+  const years = Math.floor(totalDays / 365);
+  const months = Math.floor((totalDays % 365) / 30);
+  const days = Math.floor((totalDays % 365) % 30);
+
+  document.getElementById('years-value').textContent = years;
+  document.getElementById('months-value').textContent = months;
+  document.getElementById('days-value').textContent = days;
 }

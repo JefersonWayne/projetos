@@ -104,7 +104,11 @@ function calculateAge() {
 	// Compare the timestamps of the entered date and current date
 	if (enteredDate.getTime() > currentDateObj.getTime()) {
 		// Dates are valid
+		removeError(dayInput);
+		removeError(monthInput);
 		removeError(yearInput);
+		showError(dayInput, "Entered date is in the future");
+		showError(monthInput, "Entered date is in the future");
 		showError(yearInput, "Entered date is in the future");
 		return;
 	}

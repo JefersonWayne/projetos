@@ -6,9 +6,7 @@ function calculateAge() {
 			element.parentNode.removeChild(element);
 		}
 	});
-
 	const getInputValue = (element) => Number(element.value);
-
 	const showError = (input, errorMessage) => {
 		const fieldError = document.createElement("p");
 		fieldError.textContent = errorMessage;
@@ -19,7 +17,6 @@ function calculateAge() {
 		input.setAttribute("aria-invalid", "true");
 		input.parentNode.querySelector("label").classList.add("fieldErrorText");
 	};
-
 	const removeError = (input) => {
 		const fieldError = input.parentNode.querySelector(`#${input.id}-error`);
 		if (fieldError) {
@@ -30,7 +27,6 @@ function calculateAge() {
 		input.removeAttribute("aria-invalid");
 		input.parentNode.querySelector("label").classList.remove("fieldErrorText");
 	};
-
 	const divDay = document.querySelector("#divDay");
 	const divMonth = document.querySelector("#divMonth");
 	const divYear = document.querySelector("#divYear");
@@ -40,7 +36,6 @@ function calculateAge() {
 	const dayValue = getInputValue(dayInput);
 	const monthValue = getInputValue(monthInput);
 	const yearValue = getInputValue(yearInput);
-
 	const validateInput = (value, input, errorMessage) => {
 		if (isNaN(value) || value <= 0 || value > 31) {
 			showError(input, errorMessage);
@@ -49,7 +44,6 @@ function calculateAge() {
 		removeError(input);
 		return true;
 	};
-
 	const validateYearInput = (value, input) => {
 		if (value === "") {
 			showError(input, "This field is required");
@@ -62,7 +56,6 @@ function calculateAge() {
 		removeError(input);
 		return true;
 	};
-
 	const allInputsValid = () => {
 		let isValid = true;
 		isValid = validateInput(dayValue, dayInput, "Invalid day") && isValid;
@@ -70,11 +63,9 @@ function calculateAge() {
 		isValid = validateYearInput(yearValue, yearInput) && isValid;
 		return isValid;
 	};
-
 	if (!allInputsValid()) {
 		return;
 	}
-
 	const currentDate = new Date();
 	const currentYear = currentDate.getFullYear();
 	const currentMonth = currentDate.getMonth() + 1;
@@ -82,28 +73,19 @@ function calculateAge() {
 	const inputYear = getInputValue(yearInput);
 	const inputMonth = getInputValue(monthInput);
 	const inputDay = getInputValue(dayInput);
-
-	// Validate if the entered year is greater than the current year
 	if (inputYear > currentYear) {
 		removeError(yearInput);
 		showError(yearInput, "Entered year is in the future");
 		return;
 	}
-
-	// Validate if the entered month is within the valid range (1-12)
 	if (inputMonth <= 0 || inputMonth > 12) {
 		removeError(monthInput);
 		showError(monthInput, "Invalid month");
 		return;
 	}
-
-	// Convert the entered dates to Date objects
 	const enteredDate = new Date(inputYear, inputMonth - 1, inputDay);
 	const currentDateObj = new Date(currentYear, currentMonth - 1, currentDay);
-
-	// Compare the timestamps of the entered date and current date
 	if (enteredDate.getTime() > currentDateObj.getTime()) {
-		// Dates are valid
 		removeError(dayInput);
 		removeError(monthInput);
 		removeError(yearInput);
@@ -112,16 +94,10 @@ function calculateAge() {
 		showError(yearInput, "Entered date is in the future");
 		return;
 	}
-
-	const totalDays =
-		(currentYear - inputYear) * 365 +
-		(currentMonth - inputMonth) * 30.4 +
-		(currentDay - inputDay);
-
+	const totalDays = (currentYear - inputYear) * 365 + (currentMonth - inputMonth) * 30.4 + (currentDay - inputDay);
 	const years = Math.floor(totalDays / 365);
 	const months = Math.floor((totalDays % 365) / 30.4);
 	const days = Math.floor((totalDays % 365) % 30.4);
-
 	document.getElementById("years-value").textContent = years;
 	document.getElementById("months-value").textContent = months;
 	document.getElementById("days-value").textContent = days;

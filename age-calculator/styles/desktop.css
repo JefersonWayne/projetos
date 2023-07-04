@@ -140,8 +140,10 @@ main>#result>h2 {
     color: hsl(0, 0%, 8%);
     font-style: italic;
     margin-bottom: 0;
+    text-shadow: 0 0.15rem 0rem rgba(0, 0, 0, 0.1);
 }
 
 main>#result>h2>strong>span {
     color: hsl(259, 100%, 65%);
+    font-weight: bold;
 }

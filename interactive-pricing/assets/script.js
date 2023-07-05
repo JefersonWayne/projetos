@@ -1,4 +1,4 @@
-const PER_MONTH = 0.00135;
+const PER_MONTH = 0.001332;
 const PER_MONTH_DISCOUNT = PER_MONTH * 0.75;
 
 // Verificar se os elementos do DOM estão presentes antes de acessá-los

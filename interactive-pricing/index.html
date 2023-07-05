@@ -18,14 +18,14 @@
   <main>
 
     <section id="config">
-      <h2><span id="pageviews-range-value"></span> <span id="pageviews">Pageviews</span></h2>
-      <p><span id="price-value"></span> <span id="price-amount">/month</span></p>
+      <h2><span id="range-display"></span> Pageviews</h2>
+      <p><span id="price-display"></span> /month</p>
 
-      <input type="range" id="pageviews-range" min="10000" max="300000" step="10000" value="150000">
+      <input type="range" id="range" min="10000" max="300000" step="10000" value="150000">
 
       <div>
         <p class="billing-text">Monthly Billing</p>
-        <input type="checkbox" id="checkbox-billing" oninput="convertBilling()">
+        <input type="checkbox" id="checkbox">
         <p class="billing-text">Yearly Billing</p> <span class="discount-text">25% discount</span>
       </div>
 
@@ -40,8 +40,7 @@
       <button id="trial-button" onclick="trialButton()">Start my trial</button>
     </section>
 
-    <script src="./assets/pageviews.js"></script>
-    <script src="./assets/billing.js"></script>
+    <script src="./assets/script.js"></script>
   </main>
 </body>
 

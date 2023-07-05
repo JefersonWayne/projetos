@@ -1,32 +1,35 @@
-const PER_MONTH = (16) / 100000;
-const PER_MONTH_DISCOUNT = PER_MONTH * 0.75;
+const domReferences = {
+    inputRange: document.getElementById("range"),
+    inputCheckbox: document.getElementById("checkbox"),
+    rangeSpan: document.getElementById("range-display"),
+    priceSpan: document.getElementById("price-display")
+};
 
-// Verificar se os elementos do DOM estão presentes antes de acessá-los
-const inputRange = document.getElementById("range");
-const inputCheckbox = document.getElementById("checkbox");
-const rangeSpan = document.getElementById("range-display");
-const priceSpan = document.getElementById("price-display");
+const rangeConfig = {
+    1: { range: "10K", price: 8, discount: 0.75 },
+    2: { range: "50K", price: 12, discount: 0.75 },
+    3: { range: "100K", price: 16, discount: 0.75 },
+    4: { range: "500K", price: 24, discount: 0.75 },
+    5: { range: "1M", price: 36, discount: 0.75 }
+};
 
-
-function setValue(perMonth) {
-    const rangeValue = Number(inputRange.value);
-    rangeSpan.textContent = (rangeValue / 1000) + "K";
-
-    const toDolar = (perMonth * rangeValue).toLocaleString("en", {
-        style: "currency",
-        currency: "USD",
-    });
-    priceSpan.textContent = toDolar;
+function setPrice(rangeValue, priceValue) {
+    domReferences.rangeSpan.innerHTML = rangeValue;
+    domReferences.priceSpan.innerHTML = priceValue.toLocaleString('en', { style: 'currency', currency: 'USD' });
 }
 
-function updateValue() {
-    const perMonth = inputCheckbox.checked ? PER_MONTH_DISCOUNT : PER_MONTH;
-    setValue(perMonth);
+function calcDiscount(range, price, discountValue) {
+    const isChecked = domReferences.inputCheckbox.checked;
+    const discountedPrice = price * discountValue;
+    setPrice(range, isChecked ? discountedPrice : price);
 }
 
-// Chamar a função de atualização quando a página for carregada
-window.addEventListener("load", updateValue);
+function setValue() {
+    const rangeValue = Number(domReferences.inputRange.value);
+    const { range, price, discount } = rangeConfig[rangeValue];
+    calcDiscount(range, price, discount);
+}
 
-// Atualizar o valor quando houver mudanças no intervalo ou na caixa de seleção
-inputRange.addEventListener("input", updateValue);
-inputCheckbox.addEventListener("input", updateValue);
+window.addEventListener("load", setValue);
+domReferences.inputRange.addEventListener("input", setValue);
+domReferences.inputCheckbox.addEventListener("input", setValue);

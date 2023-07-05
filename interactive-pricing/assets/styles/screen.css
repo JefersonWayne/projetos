@@ -24,6 +24,7 @@
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Manrope', sans-serif;
+    cursor: default;
 }
 
 body {
@@ -92,7 +93,7 @@ main>#config>h2>span {
 
 main>#config>input#range {
     width: 100%;
-    margin: 1.5rem 0;
+    margin: 2rem 0 0 0;
 }
 
 main>#config>p {
@@ -101,6 +102,7 @@ main>#config>p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2rem 0;
 }
 
 main>#config>p>#price-display {
@@ -124,4 +126,62 @@ main>#config>div>.billing-text {
 main>#config>div>#checkbox {
     margin: 0 1rem;
     cursor: pointer;
+}
+
+main>#config>div>#discount-value {
+    color: var(--light-red-discount-text);
+    background-color: var(--light-grayish-red-discount-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    padding: 0rem 0.5rem;
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+}
+
+main>#config>div>#discount-value>.desktop {
+    margin-left: 0.25rem;
+    font-size: 0.7rem;
+    display: none;
+}
+
+/* Escondendo o checkbox */
+#checkbox {
+    display: none;
+}
+
+/* Estilizando o botão toggle */
+.toggle-btn {
+    width: 2rem;
+    height: 1rem;
+    background-color: var(--light-grayish-blue-empty-slider-bar);
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+/* Estilizando o botão toggle quando estiver ativo (checked) */
+#checkbox:checked+.toggle-btn {
+    background-color: var(--strong-cyan-slider-background);
+}
+
+/* Estilizando a alça deslizante */
+.toggle-btn::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 2px black;
+    top: 3px;
+    left: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Posicionando a alça deslizante quando o botão toggle estiver ativo */
+#checkbox:checked+.toggle-btn::before {
+    transform: translateX(20px);
 }

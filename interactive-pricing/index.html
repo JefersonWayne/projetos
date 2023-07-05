@@ -12,7 +12,7 @@
 
   <header>
     <h1 id="pricing-heading">Simple, traffic-based pricing</h1>
-    <p id="signup-text">Sign-up for our 30-day trial.<br>No credit card required.</p>
+    <p id="signup-text">Sign-up for our 30-day trial.<br class="mobile">No credit card required.</p>
   </header>
 
   <main>
@@ -25,12 +25,14 @@
       <div>
         <p class="billing-text">Monthly Billing</p>
         <input type="checkbox" id="checkbox">
-        <p class="billing-text">Yearly Billing</p> <span class="discount-text">25% discount</span>
+        <label class="toggle-btn" for="checkbox"></label>
+        <p class="billing-text">Yearly Billing</p>
+        <p id="discount-value">-25%<span class="desktop"> discount</span></p>
       </div>
 
     </section>
 
-    <section id="confirmation">
+    <section id=" confirmation">
       <ul>
         <li>Unlimited websites</li>
         <li>100% data ownership</li>

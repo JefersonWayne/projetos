@@ -7,9 +7,10 @@ const inputCheckbox = document.getElementById("checkbox");
 const rangeSpan = document.getElementById("range-display");
 const priceSpan = document.getElementById("price-display");
 
+
 function setValue(perMonth) {
     const rangeValue = Number(inputRange.value);
-    rangeSpan.textContent = rangeValue;
+    rangeSpan.textContent = (rangeValue / 1000) + "K";
 
     const toDolar = (perMonth * rangeValue).toLocaleString("en", {
         style: "currency",

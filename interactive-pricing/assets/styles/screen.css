@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+/* Mobile style */
+
+:root {
+    --soft-cyan-full-slider-bar: hsl(174, 77%, 80%);
+    --strong-cyan-slider-background: hsl(174, 86%, 45%);
+    --light-grayish-red-discount-background: hsl(14, 92%, 95%);
+    --light-red-discount-text: hsl(15, 100%, 70%);
+    --pale-blue-cta-text: hsl(226, 100%, 87%);
+    --white-pricing-component-background: hsl(0, 0%, 100%);
+    --very-pale-blue-main-background: hsl(230, 100%, 99%);
+    --light-grayish-blue-empty-slider-bar: hsl(224, 65%, 95%);
+    --light-grayish-blue-toggle-background: hsl(223, 50%, 87%);
+    --grayish-blue-text: hsl(225, 20%, 60%);
+    --dark-desaturated-blue-text-cta-background: hsl(227, 35%, 25%);
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--very-pale-blue-main-background);
+}
+
+header {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+header>#pricing-heading {
+    color: var(--dark-desaturated-blue-text-cta-background);
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+header>#signup-text {
+    font-size: 0.75rem;
+    color: var(--grayish-blue-text);
+}
+
+header>#signup-text>br {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 90vw;
+    max-width: 600px;
+
+    background-color: var(--white-pricing-component-background);
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+main>#config>h2 {
+    color: var(--grayish-blue-text);
+    text-transform: uppercase;
+    letter-spacing: 0.17rem;
+    font-size: 0.75rem;
+    margin: 0 0 1rem 0;
+}
+
+main>#config>h2>span {
+    font-size: 0.75rem;
+}

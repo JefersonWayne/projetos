@@ -71,14 +71,57 @@ main {
     padding: 1.5rem;
 }
 
+main>#config {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 main>#config>h2 {
     color: var(--grayish-blue-text);
     text-transform: uppercase;
     letter-spacing: 0.17rem;
     font-size: 0.75rem;
-    margin: 0 0 1rem 0;
 }
 
 main>#config>h2>span {
     font-size: 0.75rem;
+}
+
+main>#config>input#range {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+main>#config>p {
+    color: var(--grayish-blue-text);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>#config>p>#price-display {
+    color: var(--dark-desaturated-blue-text-cta-background);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-right: 0.5rem;
+}
+
+main>#config>div {
+    display: flex;
+}
+
+main>#config>div>.billing-text {
+    color: var(--grayish-blue-text);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+main>#config>div>#checkbox {
+    margin: 0 1rem;
+    cursor: pointer;
 }

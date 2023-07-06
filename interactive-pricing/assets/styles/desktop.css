@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url('./global.css');
+
+body {
+    justify-content: center;
+    padding: 0;
+}
+
+
+body::before {
+    height: 60%;
+    border-radius: 0 0 0 11rem;
+    opacity: 0.4;
+}
+
+header {
+    padding: 2rem;
+}
+
+main>#config {
+    padding: 2rem;
+    position: relative;
+}
+
+main>#config>#pageviews-header,
+main>#config>#pageviews-header>#range-display {
+    color: var(--grayish-blue-text);
+    text-transform: uppercase;
+    letter-spacing: calc(0.066rem * 2);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+main>#config>#price-p {
+    position: absolute;
+    top: 1.45rem;
+    right: 2rem;
+}
+
+main>#config>input#range {
+    margin: 2.5rem 0;
+}
+
+
+header>.desktop {
+    align-items: center;
+    justify-content: start;
+}
+
+main>#config>div>#discount-value>.desktop {
+    display: block;
+}
+
+main>#confirmation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5rem;
+}

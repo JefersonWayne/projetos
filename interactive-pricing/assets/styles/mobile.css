@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url('./global.css');
+
+body {
+    justify-content: start;
+    padding: 3rem 0;
+}
+
+body::before {
+    height: 40%;
+    border-radius: 0 0 0 7rem;
+    opacity: 0.75;
+}
+
+header {
+    padding-bottom: 3rem;
+}
+
+header>.desktop {
+    flex-direction: column;
+}
+
+main>#config {
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+main>#config>#pageviews-header,
+main>#config>#pageviews-header>#range-display {
+    color: var(--grayish-blue-text);
+    text-transform: uppercase;
+    letter-spacing: 0.066rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+main>#config>input#range {
+    margin: 1.5rem 0;
+}
+
+main>#config>#price-p {
+    margin: 0.5rem 0;
+}
+
+main>#config>div>#discount-value>.desktop {
+    display: none;
+}
+
+
+main>#confirmation {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+main>#confirmation>ul {
+    margin-bottom: 1rem;
+}

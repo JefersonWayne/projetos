@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 
-/* Mobile style */
+/* Global settings and styles */
+
 
 :root {
     --soft-cyan-full-slider-bar: hsl(174, 77%, 80%);
@@ -21,26 +22,51 @@
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 600;
     font-family: 'Manrope', sans-serif;
     cursor: default;
 }
 
+html {
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
-    max-width: 100vw;
-    min-height: 100vh;
-    background-color: var(--very-pale-blue-main-background);
-    padding-bottom: 3rem;
+    background: var(--very-pale-blue-main-background);
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
+
+body::before {
+    content: '';
+    position: absolute;
+    background-color: var(--light-grayish-blue-empty-slider-bar);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Configurações para textos padrões */
+
+.default-text {
+    color: var(--grayish-blue-text);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Configuração do Header */
 
 header {
     text-align: center;
-    margin: 3rem 0;
 }
 
 header>#pricing-heading {
@@ -50,14 +76,18 @@ header>#pricing-heading {
     margin-bottom: 0.75rem;
 }
 
-header>#signup-text {
+header>.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>.desktop>.signup-text {
     font-size: 0.75rem;
     color: var(--grayish-blue-text);
 }
 
-header>#signup-text>br {
-    display: block;
-}
+/* Main */
 
 main {
     display: flex;
@@ -72,38 +102,20 @@ main {
 main>#config {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 
     width: 100%;
 
     background-color: var(--white-pricing-component-background);
     border-radius: 0.5rem 0.5rem 0 0;
-    padding: 1.5rem;
-    box-shadow: 0.9 0rem 1rem rgba(0, 0, 0, 0.05);
 
-    border-bottom: 1px solid var(--light-grayish-blue-toggle-background);
+    box-shadow: 0rem -1rem 1rem rgba(0, 0, 0, 0.05);
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0.025);
 }
 
-main>#config>h2 {
-    color: var(--grayish-blue-text);
-    text-transform: uppercase;
-    letter-spacing: 0.17rem;
-    font-size: 0.75rem;
-}
-
-main>#config>h2>span {
-    font-size: 0.75rem;
-}
-
-
-
-
-/*range*/
+/* Configuração do Range */
 
 main>#config>input#range {
-    margin-top: 1.5rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -115,6 +127,7 @@ main>#config>input#range {
     position: relative;
 }
 
+/* Configuração do Range WebKit */
 main>#config>input#range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -135,29 +148,44 @@ main>#config>input#range::-webkit-slider-thumb:active {
     background-color: #0eae9e;
 }
 
-main>#config>input#range::-moz-range-thumb {
-    -moz-appearance: none;
-    appearance: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background-color: red;
-    cursor: pointer;
-}
-
-main>#config>input#range::-ms-thumb {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    background-color: red;
-    cursor: pointer;
-}
-
 main>#config>input#range::-webkit-slider-runnable-track {
     background-color: transparent;
     height: 0.5rem;
     border-radius: 5px;
 }
+
+/* Configuração do Range Moz */
+main>#config>input#range::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--strong-cyan-slider-background) url("../../interactive-pricing-component-main/images/icon-slider.svg") no-repeat;
+    background-size: 21px 14px;
+    background-position: center center;
+    box-shadow: 0 0.5rem 0.75rem var(--soft-cyan-full-slider-bar);
+    position: relative;
+    top: -1rem;
+    cursor: grab;
+}
+
+/* Configuração do Range MS */
+main>#config>input#range::-ms-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--strong-cyan-slider-background) url("../../interactive-pricing-component-main/images/icon-slider.svg") no-repeat;
+    background-size: 21px 14px;
+    background-position: center center;
+    box-shadow: 0 0.5rem 0.75rem var(--soft-cyan-full-slider-bar);
+    position: relative;
+    top: -1rem;
+    cursor: grab;
+}
+
 
 main>#config>input#range::-moz-range-track {
     background-color: transparent;
@@ -167,56 +195,34 @@ main>#config>input#range::-moz-range-track {
 
 main>#config>input#range::-ms-track {
     background-color: transparent;
-    height: 0.5rem;
-    border-radius: 5px;
 }
 
 main>#config>input#range::-webkit-slider-thumb:hover,
 main>#config>input#range::-moz-range-thumb:hover,
 main>#config>input#range::-ms-thumb:hover {
-    background-color: yellow;
+    background-color: transparent;
 }
 
 
-/*range*/
-
-
-
-
-main>#config>p {
-    color: var(--grayish-blue-text);
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1.5rem 0;
-}
-
-main>#config>p>#price-display {
+main>#config>.default-text>#price-display {
     color: var(--dark-desaturated-blue-text-cta-background);
     font-size: 1.5rem;
     font-weight: 800;
     margin-right: 0.5rem;
 }
 
-main>#config>div {
+main>#config>#billing {
     display: flex;
-    margin-bottom: 1.5rem;
-}
-
-main>#config>div>.billing-text {
-    color: var(--grayish-blue-text);
-    font-size: 0.8rem;
-    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-main>#config>div>#checkbox {
-    margin: 0 1rem;
-    cursor: pointer;
+main>#config>#billing>.billing-text {
+    margin: 0.5rem;
 }
 
-main>#config>div>#discount-value {
+main>#config>#billing>#discount-value {
     color: var(--light-red-discount-text);
     background-color: var(--light-grayish-red-discount-background);
     display: flex;
@@ -225,40 +231,34 @@ main>#config>div>#discount-value {
     font-size: 0.7rem;
     padding: 0rem 0.5rem;
     border-radius: 1rem;
-    margin-left: 0.5rem;
 }
 
-main>#config>div>#discount-value>.desktop {
+main>#config>#billing>#discount-value>.desktop {
     margin-left: 0.25rem;
     font-size: 0.7rem;
+}
+
+main>#config>#billing>#checkbox {
     display: none;
 }
 
-/* Escondendo o checkbox */
-main>#config>div>#checkbox {
-    display: none;
-}
-
-/* Estilizando o botão toggle */
-main>#config>div>.toggle-btn {
+main>#config>#billing#billing>.toggle-btn {
     width: 35px;
     height: 19px;
     background-color: var(--light-grayish-blue-toggle-background);
     border-radius: 15px;
-    position: relative;
     cursor: pointer;
-    margin: 0 0.7rem;
-    transition: background-color 300ms;
+    margin: 0 0.5rem;
+    scale: 1.5;
+    position: relative;
 }
 
-/* Estilizando o botão toggle quando estiver ativo (checked) */
-main>#config>div>#checkbox:checked+.toggle-btn {
+main>#config>#billing>#checkbox:checked+.toggle-btn {
     background-color: var(--strong-cyan-slider-background);
     transition: background-color 300ms;
 }
 
-/* Estilizando a alça deslizante */
-main>#config>div>.toggle-btn::before {
+main>#config>#billing>.toggle-btn::before {
     content: "";
     position: absolute;
     width: 13px;
@@ -270,15 +270,12 @@ main>#config>div>.toggle-btn::before {
     transition: all 0.5s ease-in-out;
 }
 
-/* Posicionando a alça deslizante quando o botão toggle estiver ativo */
-main>#config>div>#checkbox:checked+.toggle-btn::before {
+main>#config>#billing>#checkbox:checked+.toggle-btn::before {
     transform: translateX(16px);
 }
 
 main>#confirmation {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-self: flex-start;
     align-items: center;
 
@@ -287,14 +284,12 @@ main>#confirmation {
     background-color: var(--white-pricing-component-background);
     box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.05);
     border-radius: 0 0 0.5rem 0.5rem;
-    padding: 1.5rem;
 }
 
 main>#confirmation>ul {
     list-style-type: none;
     text-align: center;
     color: var(--grayish-blue-text);
-    margin-bottom: 1rem;
 }
 
 main>#confirmation>ul>li {
@@ -317,4 +312,5 @@ main>#confirmation>button#trial-button {
     cursor: pointer;
     background-color: var(--dark-desaturated-blue-text-cta-background);
     color: var(--pale-blue-cta-text);
+    cursor: pointer;
 }

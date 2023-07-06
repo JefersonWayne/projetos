@@ -2,7 +2,8 @@ const domReferences = {
     inputRange: document.getElementById("range"),
     inputCheckbox: document.getElementById("checkbox"),
     rangeSpan: document.getElementById("range-display"),
-    priceSpan: document.getElementById("price-display")
+    priceSpan: document.getElementById("price-display"),
+    buttonTrial: document.getElementById("trial-button")
 };
 
 const rangeConfig = {
@@ -37,6 +38,11 @@ function setValue() {
     setRangeBackground(rangeValue);
 }
 
+function warnUser() {
+    window.alert("Esse site é apenas um exemplo!")
+}
+
 window.addEventListener("load", setValue);
 domReferences.inputRange.addEventListener("input", setValue);
 domReferences.inputCheckbox.addEventListener("input", setValue);
+domReferences.buttonTrial.addEventListener("click", warnUser);

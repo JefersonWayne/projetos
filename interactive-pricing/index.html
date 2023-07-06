@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="./assets/styles/screen.css" media="screen">
+  <link rel="stylesheet" href="./assets/styles/mobile.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="./assets/styles/desktop.css" media="screen and (min-width: 769px)">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive pricing component</title>
@@ -12,21 +13,27 @@
 
   <header>
     <h1 id="pricing-heading">Simple, traffic-based pricing</h1>
-    <p id="signup-text">Sign-up for our 30-day trial.<br class="mobile">No credit card required.</p>
+    <span class="desktop">
+      <p class="signup-text">Sign-up for our 30-day trial.&ThinSpace;</p>
+      <p class="signup-text">No credit card
+        required.</p>
   </header>
+  </span>
 
   <main>
 
     <section id="config">
-      <h2><span id="range-display"></span> pageviews</h2>
+      <h2 id="pageviews-header"><span id="range-display"></span> pageviews</h2>
       <input type="range" id="range" min="1" max="5" step="1">
-      <p><span id="price-display"></span> / month</p>
+      <p id="price-p" class="default-text">
+        <span id="price-display"></span> / month
+      </p>
 
-      <div>
-        <p class="billing-text">Monthly Billing</p>
+      <div id="billing">
+        <p class="default-text billing-text">Monthly Billing</p>
         <input type="checkbox" id="checkbox">
         <label class="toggle-btn" for="checkbox"></label>
-        <p class="billing-text">Yearly Billing</p>
+        <p class="default-text billing-text">Yearly Billing</p>
         <p id="discount-value">-25%<span class="desktop"> discount</span></p>
       </div>
 

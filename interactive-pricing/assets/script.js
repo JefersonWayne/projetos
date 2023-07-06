@@ -15,7 +15,7 @@ const rangeConfig = {
 
 function setRangeBackground(rangeValue) {
     let gradientValue = (rangeValue - 1) * 25;
-    const gradient = `linear-gradient(90deg, rgba(16,213,194,1) ${gradientValue - 1}%, rgba(234,238,251,1) ${gradientValue}%)`;
+    const gradient = `linear-gradient(90deg, hsl(174, 77%, 80%) ${gradientValue}%, rgba(234,238,251,1) ${gradientValue}%)`;
     domReferences.inputRange.style.background = gradient;
 }
 

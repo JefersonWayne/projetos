@@ -79,11 +79,11 @@ main>#config {
     width: 100%;
 
     background-color: var(--white-pricing-component-background);
-    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.08);
     border-radius: 0.5rem 0.5rem 0 0;
     padding: 1.5rem;
+    box-shadow: 0.9 0rem 1rem rgba(0, 0, 0, 0.05);
 
-    margin-bottom: 0.2rem;
+    border-bottom: 1px solid var(--light-grayish-blue-toggle-background);
 }
 
 main>#config>h2 {
@@ -101,74 +101,82 @@ main>#config>h2>span {
 
 
 /*range*/
-/* Estilizando o input range */
+
 main>#config>input#range {
-    /* Removendo estilos padrão */
+    margin-top: 1.5rem;
     -webkit-appearance: none;
-    /* Removendo a aparência padrão do navegador */
     -moz-appearance: none;
     appearance: none;
     outline: none;
-    /* Removendo a borda de foco */
-
-    /* Dimensões do controle deslizante */
     width: 100%;
-    height: 10px;
-
-    /* Estilizando a trilha */
-    background-color: #ddd;
-    /* Cor da trilha */
+    height: 0.35rem;
     border-radius: 5px;
-    /* Borda arredondada */
+    cursor: pointer;
+    position: relative;
 }
 
-/* Estilizando a barra preenchida do input range */
-main>#config>input#range::-webkit-slider-runnable-track {
-    height: 10px;
-    /* Mesma altura da trilha */
-    border-radius: 5px;
-    /* Borda arredondada */
-    background-color: transparent;
-}
-
-/* Estilizando o polegar (handle) do input range */
 main>#config>input#range::-webkit-slider-thumb {
-    /* Dimensões do polegar */
-    width: 20px;
-    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
-    /* Transformando em um círculo */
-    background-color: #4CAF50;
-    /* Cor do polegar */
-    cursor: pointer;
-    /* Cursor ao passar o mouse */
-
-    /* Adicionando uma sombra */
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    background: var(--strong-cyan-slider-background) url("../../interactive-pricing-component-main/images/icon-slider.svg") no-repeat;
+    background-size: 21px 14px;
+    background-position: center center;
+    box-shadow: 0 0.5rem 0.75rem var(--soft-cyan-full-slider-bar);
+    position: relative;
+    top: -1rem;
+    cursor: grab;
 }
 
-/* Estilizando o polegar do input range para o Firefox */
+main>#config>input#range::-webkit-slider-thumb:active {
+    cursor: grabbing;
+    background-color: #0eae9e;
+}
+
 main>#config>input#range::-moz-range-thumb {
-    /* Estilos semelhantes ao polegar do Webkit */
-    width: 20px;
-    height: 20px;
+    -moz-appearance: none;
+    appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
-    background: linear-gradient(90deg, rgba(16, 213, 194, 1) 0%, rgba(234, 238, 251, 1) 50%);
+    background-color: red;
     cursor: pointer;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilizando a cor do polegar quando estiver ativo ou em foco */
-main>#config>input#range::-moz-range-thumb:active,
-main>#config>input#range::-moz-range-thumb:focus {
-    background-color: #3e8e41;
+main>#config>input#range::-ms-thumb {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
 }
 
-/* Estilizando a cor da barra preenchida quando o polegar passar por ela */
-main>#config>input#range::-moz-range-progress {
-    background-color: #005703;
-    /* Cor da barra preenchida */
+main>#config>input#range::-webkit-slider-runnable-track {
+    background-color: transparent;
+    height: 0.5rem;
+    border-radius: 5px;
 }
+
+main>#config>input#range::-moz-range-track {
+    background-color: transparent;
+    height: 0.5rem;
+    border-radius: 5px;
+}
+
+main>#config>input#range::-ms-track {
+    background-color: transparent;
+    height: 0.5rem;
+    border-radius: 5px;
+}
+
+main>#config>input#range::-webkit-slider-thumb:hover,
+main>#config>input#range::-moz-range-thumb:hover,
+main>#config>input#range::-ms-thumb:hover {
+    background-color: yellow;
+}
+
 
 /*range*/
 
@@ -233,9 +241,9 @@ main>#config>div>#checkbox {
 
 /* Estilizando o botão toggle */
 main>#config>div>.toggle-btn {
-    width: 2.3rem;
-    height: 1.3rem;
-    background-color: var(--light-grayish-blue-empty-slider-bar);
+    width: 35px;
+    height: 19px;
+    background-color: var(--light-grayish-blue-toggle-background);
     border-radius: 15px;
     position: relative;
     cursor: pointer;
@@ -253,13 +261,13 @@ main>#config>div>#checkbox:checked+.toggle-btn {
 main>#config>div>.toggle-btn::before {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background-color: white;
     top: 3px;
     left: 3px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Posicionando a alça deslizante quando o botão toggle estiver ativo */
@@ -277,7 +285,7 @@ main>#confirmation {
     width: 100%;
 
     background-color: var(--white-pricing-component-background);
-    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.05);
     border-radius: 0 0 0.5rem 0.5rem;
     padding: 1.5rem;
 }
@@ -294,13 +302,10 @@ main>#confirmation>ul>li {
     font-size: 0.8rem;
 }
 
-main>#confirmation>ul>li::before {
-    content: "\2713";
-    position: relative;
-    color: var(--strong-cyan-slider-background);
-    font-weight: bold;
+main>#confirmation>ul>li>img {
     margin-right: 0.25rem;
 }
+
 
 main>#confirmation>button#trial-button {
     width: 12rem;

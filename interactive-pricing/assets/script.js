@@ -13,6 +13,12 @@ const rangeConfig = {
     5: { range: "1M", price: 36, discount: 0.75 }
 };
 
+function setRangeBackground(rangeValue) {
+    let gradientValue = (rangeValue - 1) * 25;
+    const gradient = `linear-gradient(90deg, rgba(16,213,194,1) ${gradientValue - 1}%, rgba(234,238,251,1) ${gradientValue}%)`;
+    domReferences.inputRange.style.background = gradient;
+}
+
 function setPrice(rangeValue, priceValue) {
     domReferences.rangeSpan.innerHTML = rangeValue;
     domReferences.priceSpan.innerHTML = priceValue.toLocaleString('en', { style: 'currency', currency: 'USD' });
@@ -28,6 +34,7 @@ function setValue() {
     const rangeValue = Number(domReferences.inputRange.value);
     const { range, price, discount } = rangeConfig[rangeValue];
     calcDiscount(range, price, discount);
+    setRangeBackground(rangeValue);
 }
 
 window.addEventListener("load", setValue);

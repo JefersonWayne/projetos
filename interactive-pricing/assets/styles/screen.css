@@ -5,13 +5,13 @@
 
 :root {
     --soft-cyan-full-slider-bar: hsl(174, 77%, 80%);
-    --strong-cyan-slider-background: hsl(174, 86%, 45%);
+    --strong-cyan-slider-background: #10d5c2;
     --light-grayish-red-discount-background: hsl(14, 92%, 95%);
     --light-red-discount-text: hsl(15, 100%, 70%);
     --pale-blue-cta-text: hsl(226, 100%, 87%);
     --white-pricing-component-background: hsl(0, 0%, 100%);
     --very-pale-blue-main-background: hsl(230, 100%, 99%);
-    --light-grayish-blue-empty-slider-bar: hsl(224, 65%, 95%);
+    --light-grayish-blue-empty-slider-bar: #eaeefb;
     --light-grayish-blue-toggle-background: hsl(223, 50%, 87%);
     --grayish-blue-text: hsl(225, 20%, 60%);
     --dark-desaturated-blue-text-cta-background: hsl(227, 35%, 25%);
@@ -32,9 +32,10 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     background-color: var(--very-pale-blue-main-background);
+    padding-bottom: 3rem;
 }
 
 header {
@@ -62,22 +63,27 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     width: 90vw;
     max-width: 600px;
-
-    background-color: var(--white-pricing-component-background);
-    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.08);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
 }
 
 main>#config {
-    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    width: 100%;
+
+    background-color: var(--white-pricing-component-background);
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1.5rem;
+
+    margin-bottom: 0.2rem;
 }
 
 main>#config>h2 {
@@ -91,10 +97,83 @@ main>#config>h2>span {
     font-size: 0.75rem;
 }
 
+
+
+
+/*range*/
+/* Estilizando o input range */
 main>#config>input#range {
+    /* Removendo estilos padrão */
+    -webkit-appearance: none;
+    /* Removendo a aparência padrão do navegador */
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    /* Removendo a borda de foco */
+
+    /* Dimensões do controle deslizante */
     width: 100%;
-    margin: 2rem 0 0 0;
+    height: 10px;
+
+    /* Estilizando a trilha */
+    background-color: #ddd;
+    /* Cor da trilha */
+    border-radius: 5px;
+    /* Borda arredondada */
 }
+
+/* Estilizando a barra preenchida do input range */
+main>#config>input#range::-webkit-slider-runnable-track {
+    height: 10px;
+    /* Mesma altura da trilha */
+    border-radius: 5px;
+    /* Borda arredondada */
+    background-color: transparent;
+}
+
+/* Estilizando o polegar (handle) do input range */
+main>#config>input#range::-webkit-slider-thumb {
+    /* Dimensões do polegar */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* Transformando em um círculo */
+    background-color: #4CAF50;
+    /* Cor do polegar */
+    cursor: pointer;
+    /* Cursor ao passar o mouse */
+
+    /* Adicionando uma sombra */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilizando o polegar do input range para o Firefox */
+main>#config>input#range::-moz-range-thumb {
+    /* Estilos semelhantes ao polegar do Webkit */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(16, 213, 194, 1) 0%, rgba(234, 238, 251, 1) 50%);
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilizando a cor do polegar quando estiver ativo ou em foco */
+main>#config>input#range::-moz-range-thumb:active,
+main>#config>input#range::-moz-range-thumb:focus {
+    background-color: #3e8e41;
+}
+
+/* Estilizando a cor da barra preenchida quando o polegar passar por ela */
+main>#config>input#range::-moz-range-progress {
+    background-color: #005703;
+    /* Cor da barra preenchida */
+}
+
+/*range*/
+
+
+
 
 main>#config>p {
     color: var(--grayish-blue-text);
@@ -102,7 +181,7 @@ main>#config>p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 main>#config>p>#price-display {
@@ -114,6 +193,7 @@ main>#config>p>#price-display {
 
 main>#config>div {
     display: flex;
+    margin-bottom: 1.5rem;
 }
 
 main>#config>div>.billing-text {
@@ -147,41 +227,89 @@ main>#config>div>#discount-value>.desktop {
 }
 
 /* Escondendo o checkbox */
-#checkbox {
+main>#config>div>#checkbox {
     display: none;
 }
 
 /* Estilizando o botão toggle */
-.toggle-btn {
-    width: 2rem;
-    height: 1rem;
+main>#config>div>.toggle-btn {
+    width: 2.3rem;
+    height: 1.3rem;
     background-color: var(--light-grayish-blue-empty-slider-bar);
     border-radius: 15px;
     position: relative;
     cursor: pointer;
-
+    margin: 0 0.7rem;
+    transition: background-color 300ms;
 }
 
 /* Estilizando o botão toggle quando estiver ativo (checked) */
-#checkbox:checked+.toggle-btn {
+main>#config>div>#checkbox:checked+.toggle-btn {
     background-color: var(--strong-cyan-slider-background);
+    transition: background-color 300ms;
 }
 
 /* Estilizando a alça deslizante */
-.toggle-btn::before {
+main>#config>div>.toggle-btn::before {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: white;
-    box-shadow: 0px 0px 2px black;
     top: 3px;
     left: 3px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 /* Posicionando a alça deslizante quando o botão toggle estiver ativo */
-#checkbox:checked+.toggle-btn::before {
-    transform: translateX(20px);
+main>#config>div>#checkbox:checked+.toggle-btn::before {
+    transform: translateX(16px);
+}
+
+main>#confirmation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: var(--white-pricing-component-background);
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1.5rem;
+}
+
+main>#confirmation>ul {
+    list-style-type: none;
+    text-align: center;
+    color: var(--grayish-blue-text);
+    margin-bottom: 1rem;
+}
+
+main>#confirmation>ul>li {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+main>#confirmation>ul>li::before {
+    content: "\2713";
+    position: relative;
+    color: var(--strong-cyan-slider-background);
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
+main>#confirmation>button#trial-button {
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--dark-desaturated-blue-text-cta-background);
+    color: var(--pale-blue-cta-text);
 }

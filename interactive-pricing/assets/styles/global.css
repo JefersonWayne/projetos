@@ -41,6 +41,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+    padding: 3rem 0;
 }
 
 body::before {
@@ -66,6 +67,8 @@ body::before {
 /* Configuração do Header */
 
 header {
+    background: url('../../interactive-pricing-component-main/images/pattern-circles.svg');
+    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -110,7 +113,7 @@ main>#config {
 
     box-shadow: 0rem -1rem 1rem rgba(0, 0, 0, 0.05);
 
-    border-bottom: 2px solid rgba(0, 0, 0, 0.025);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Configuração do Range */
@@ -288,7 +291,6 @@ main>#confirmation {
 
 main>#confirmation>ul {
     list-style-type: none;
-    text-align: center;
     color: var(--grayish-blue-text);
 }
 

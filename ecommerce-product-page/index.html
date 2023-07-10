@@ -9,25 +9,55 @@
 </head>
 
 <body>
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <!-- Cabeçalho -->
+  <header>
+    <img src="ecommerce-product-page-main/images/logo.svg" alt="Black store logo"> <!-- Logotipo da loja -->
+    <nav>
+      <a href="#">Collections</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <img src="ecommerce-product-page-main/images/icon-cart.svg" alt="Shopping cart icon" aria-label="Shopping Cart">
+    <!-- Ícone do carrinho de compras -->
+    <img src="ecommerce-product-page-main/images/image-avatar.png" alt="User avatar icon">
+    <!-- Ícone de avatar do usuário -->
+  </header>
 
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
+  <!-- Conteúdo principal -->
+  <main>
+    <section id="product-photos">
+      <img src="ecommerce-product-page-main/images/image-product-1.jpg" id="product-image">
+      <!-- Imagem principal do produto -->
+      <div id="small-filtered-photos">
+        <img src="ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" class="product-small-image">
+        <!-- Imagem em miniatura do produto 2 -->
+        <img src="ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" class="product-small-image">
+        <!-- Imagem em miniatura do produto 3 -->
+        <img src="ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" class="product-small-image">
+        <!-- Imagem em miniatura do produto 4 -->
+      </div>
+    </section>
+    <section id="product-information">
+      <h3 id="store-slogan">Sneaker Company</h3> <!-- Slogan da loja -->
+      <h1 id="product-name">Fall Limited Edition Sneakers</h1> <!-- Nome do produto -->
+      <p id="product-description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p> <!-- Descrição do produto -->
+      <h2 id="discounted-price">$125.00</h2> <!-- Preço com desconto -->
+      <p id="discount-percentage">50%</p> <!-- Porcentagem de desconto -->
+      <p id="original-price">$250.00</p> <!-- Preço original -->
+      <div id="cart-button">
+        <button id="decrease-quantity">-</button> <!-- Botão de diminuir quantidade -->
+        <span id="current-quantity">0</span> <!-- Quantidade atual -->
+        <button id="increase-quantity">+</button> <!-- Botão de aumentar quantidade -->
+      </div>
+      <button id="add-to-cart">Add to cart</button> <!-- Botão "Adicionar ao carrinho" -->
+    </section>
+  </main>
+  <script src="javascript/scripts.js"></script>
 </body>
 
 </html>

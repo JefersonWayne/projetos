@@ -1,0 +1,150 @@
+/* Estilos gerais */
+@import url("normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+/* Estilos do body */
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100vw;
+    background-color: #FFF;
+    padding: 0rem;
+}
+
+/* Estilos do header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    height: 6rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+header>#shop-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>#shop-section>#navigation {
+    margin: 0 0 0 3.5rem;
+}
+
+header>#shop-section>#navigation>.navigation-itens {
+    margin-right: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    position: relative;
+    transition: 700ms;
+}
+
+header>#shop-section>#navigation>.navigation-itens:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+header>#shop-section>#navigation>.navigation-itens::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: hsl(26, 100%, 55%);
+    bottom: -2.4rem;
+    left: 0;
+    transform: scaleX(0);
+    transition: 700ms;
+}
+
+header>#shop-section>#navigation>.navigation-itens:hover::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: hsl(26, 100%, 55%);
+    bottom: -2.4rem;
+    left: 0;
+    transform: scaleX(1);
+}
+
+header>#user-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>#user-section>#shop-cart-icon {
+    width: 1.5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+header>#user-section>#shop-cart-icon:hover {
+    filter: brightness(0);
+}
+
+header>#user-section>#user-avatar {
+    width: 4rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+header>#user-section>#user-avatar:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+
+/* Estilos do main */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    padding: 3rem 2rem;
+}
+
+main>#product-photos>#image-focus {
+    width: 25rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+main>#product-photos>#small-filtered-photos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+main>#product-photos>#small-filtered-photos>.product-small-image {
+    width: 5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 300ms;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+main>#product-photos>#small-filtered-photos>.product-small-image:hover {
+    scale: 0.95;
+}

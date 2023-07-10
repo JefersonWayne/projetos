@@ -6,32 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="styles/global.css">
 </head>
 
 <body>
   <!-- Cabeçalho -->
   <header>
-    <img src="ecommerce-product-page-main/images/logo.svg" alt="Black store logo"> <!-- Logotipo da loja -->
-    <nav>
-      <a href="#">Collections</a>
-      <a href="#">Men</a>
-      <a href="#">Women</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-    <img src="ecommerce-product-page-main/images/icon-cart.svg" alt="Shopping cart icon" aria-label="Shopping Cart">
-    <!-- Ícone do carrinho de compras -->
-    <img src="ecommerce-product-page-main/images/image-avatar.png" alt="User avatar icon">
-    <!-- Ícone de avatar do usuário -->
+    <section id="shop-section">
+      <img id="logo" src="ecommerce-product-page-main/images/logo.svg" alt="Black store logo"> <!-- Logotipo da loja -->
+      <nav id="navigation">
+        <a class="navigation-itens" href="#">Collections</a>
+        <a class="navigation-itens" href="#">Men</a>
+        <a class="navigation-itens" href="#">Women</a>
+        <a class="navigation-itens" href="#">About</a>
+        <a class="navigation-itens" href="#">Contact</a>
+      </nav>
+    </section>
+    <section id="user-section">
+      <img id="shop-cart-icon" src="ecommerce-product-page-main/images/icon-cart.svg" alt="Shopping cart icon" aria-label="Shopping Cart">
+      <!-- Ícone do carrinho de compras -->
+      <img id="user-avatar" src="ecommerce-product-page-main/images/image-avatar.png" alt="User avatar icon">
+      <!-- Ícone de avatar do usuário -->
+    </section>
   </header>
 
   <!-- Conteúdo principal -->
   <main>
     <section id="product-photos">
-      <img src="ecommerce-product-page-main/images/image-product-1.jpg" id="product-image">
+      <img src="ecommerce-product-page-main/images/image-product-1.jpg" id="image-focus">
       <!-- Imagem principal do produto -->
       <div id="small-filtered-photos">
-        <img src="ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="product-small-image">
+        <img src="ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" class="product-small-image">
         <!-- Imagem em miniatura do produto 1 -->
         <img src="ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" class="product-small-image">
         <!-- Imagem em miniatura do produto 2 -->

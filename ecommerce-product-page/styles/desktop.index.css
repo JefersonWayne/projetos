@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* desktop index */
+
+@import url('css/normalize.css');
+@import url('css/global.css');
+@import url('header/desktop-header.css');

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* mobile index */
+
+@import url('css/normalize.css');
+@import url('css/global.css');
+@import url('header/mobile-header.css');

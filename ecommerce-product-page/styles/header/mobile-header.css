@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* mobile header */
+
+body {
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+}

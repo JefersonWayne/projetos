@@ -1,0 +1,83 @@
+/* Estilos do header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    height: 6rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+header>#shop-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>#shop-section>#navigation {
+    margin: 0 0 0 2.5rem;
+}
+
+header>#shop-section>#navigation>.navigation-itens {
+    margin-right: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    position: relative;
+    transition: 700ms;
+}
+
+header>#shop-section>#navigation>.navigation-itens:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+header>#shop-section>#navigation>.navigation-itens::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: hsl(26, 100%, 55%);
+    bottom: -2.4rem;
+    left: 0;
+    transform: scaleX(0);
+    transition: 700ms;
+}
+
+header>#shop-section>#navigation>.navigation-itens:hover::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: hsl(26, 100%, 55%);
+    bottom: -2.4rem;
+    left: 0;
+    transform: scaleX(1);
+}
+
+header>#user-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>#user-section>#shop-cart-icon {
+    width: 1.5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+header>#user-section>#shop-cart-icon:hover {
+    filter: brightness(0);
+}
+
+header>#user-section>#user-avatar {
+    width: 4rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+header>#user-section>#user-avatar:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}

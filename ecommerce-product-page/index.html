@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="assets/css/mobile/mobile.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="assets/css/desktop/desktop.css" media="screen and (min-width: 769px)">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <section id="area-da-loja">
+      <img src="ecommerce-product-page-main/images/logo.svg" id="logo">
+      <nav id="menu">
+        <span class="material-symbols-outlined" id="btn-menu">menu</span>
+        <div id="menu-mobile">
+          <span class="material-symbols-outlined" id="btn-fechar-menu">close</span>
+        </div>
+        <a class="menu-item" href="#">Collections</a>
+        <a class="menu-item" href="#">Men</a>
+        <a class="menu-item" href="#">Women</a>
+        <a class="menu-item" href="#">About</a>
+        <a class="menu-item" href="#">Contact</a>
+      </nav>
+    </section>
+    <section id="area-do-usuario">
+      <img id="icone-carrinho" src="ecommerce-product-page-main/images/icon-cart.svg">
+      <img id="imagem-do-usuario" src="ecommerce-product-page-main/images/image-avatar.png">
+    </section>
+  </header>
+  <!--  Main -->
+  <main>
+    <section id="images-do-produto">
+      <img id="imagem-destaque" src="ecommerce-product-page-main/images/image-product-1.jpg">
+      <img id="imagem-selecionada" src="ecommerce-product-page-main/images/image-product-1-thumbnail.jpg">
+      <img src="ecommerce-product-page-main/images/image-product-2-thumbnail.jpg">
+      <img src="ecommerce-product-page-main/images/image-product-3-thumbnail.jpg">
+      <img src="ecommerce-product-page-main/images/image-product-4-thumbnail.jpg">
+    </section>
+    <section id="informacoes-do-produto">
+      <h3 id="nome-da-empresa">Sneaker Company</h3>
+      <h1 id="nome-do-produto">Fall Limited Edition Sneakers</h1>
+      <h2 id="descricao-do-produto">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </h2>
+      <div id="precos">
+        <p id="preco-com-desconto">$125.00</p>
+        <p id="desconto">50%</p>
+        <p id="preco-sem-desconto">$250.00</p>
+      </div>
+      <div id="carrinho-qtd">
+        <button id="btn-retirar">-</button>
+        <span id="quantidade">0</span>
+        <button id="btn-adicionar">+</button>
+      </div>
+      <button id="adicionar-ao-carrinho"><img src="ecommerce-product-page-main/images/icon-cart.svg">Add to
+        cart</button>
+    </section>
+  </main>
+  <script src="assets/js/menu.js"></script>
+</body>
+
+</html>

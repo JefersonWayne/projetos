@@ -1,16 +1,18 @@
 const dom = {
-    menu: document.querySelector("nav#menu"),
-    closeMenu: document.querySelector("#btn-fechar-menu"),
+    menu: document.querySelector('#menu'),
+    openMenu: document.querySelector("#btn-menu"),
+    closeMenu: document.querySelector("#btn-fechar-menu")
 }
 
-if (dom.menu && dom.closeMenu) {
-    dom.menu.addEventListener("click", () => {
-        dom.menu.classList.add("active");
-    })
-
-    dom.closeMenu.addEventListener("click", () => {
-        dom.menu.removeAttribute("class", "active");
-    })
-} else {
-    console.error("One or both DOM elements do not exist.");
+function removeMenu() {
+    dom.menu.classList.remove('active');
 }
+
+function addMenu() {
+    dom.menu.classList.add('active');
+}
+
+dom.openMenu.addEventListener('click', addMenu);
+
+dom.closeMenu.addEventListener('click', removeMenu);
+window.addEventListener('resize', removeMenu);

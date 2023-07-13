@@ -71,11 +71,54 @@ header>#area-da-loja>#menu>.menu-item:hover::before {
     width: 100%;
 }
 
+header>#area-do-usuario {
+    position: relative;
+}
+
 header>#area-do-usuario>#icone-carrinho:hover {
     /*Manipulations stuff*/
     filter: brightness(0);
     /*Miscellaneous*/
     cursor: pointer;
+}
+
+header>#area-do-usuario>#carrinho {
+    background-color: #FFF;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.75rem 0.75rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    position: absolute;
+    right: -0.5rem;
+    top: 5rem;
+    width: 20rem;
+    display: none;
+}
+
+header>#area-do-usuario>#carrinho.open {
+    display: block;
+}
+
+header>#area-do-usuario>#carrinho>h4 {
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 1rem 0;
+    text-indent: 2rem;
+}
+
+header>#area-do-usuario>#carrinho>#pedido {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header>#area-do-usuario>#carrinho>#pedido>#empty {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
 }
 
 header>#area-do-usuario>#imagem-do-usuario {

@@ -29,6 +29,7 @@ body {
     background-color: #FFF;
     width: 100%;
     min-height: 100vh;
+    padding-bottom: 3rem;
 }
 
 a.menu-item {

@@ -316,7 +316,7 @@ main>#informacoes-do-produto>#buttons>#carrinho-qtd {
     align-items: center;
     justify-content: space-between;
     gap: 0;
-    width: 8rem;
+    width: 30%;
     height: 3rem;
     border-radius: 0.5rem;
 
@@ -349,4 +349,30 @@ main>#informacoes-do-produto>#buttons>#carrinho-qtd>#btn-adicionar {
 main>#informacoes-do-produto>#buttons>#carrinho-qtd>#quantidade {
     margin: 0;
     font-weight: bold;
+}
+
+main>#informacoes-do-produto>#buttons>#adicionar-ao-carrinho {
+    color: #FFF;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 0.5rem;
+    font-weight: bold;
+    width: 60%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: box-shadow 400ms;
+}
+
+main>#informacoes-do-produto>#buttons>#adicionar-ao-carrinho:hover {
+    box-shadow: 0 0.7rem 1rem 0 rgb(255, 224, 200);
+}
+
+main>#informacoes-do-produto>#buttons>#adicionar-ao-carrinho>img {
+    width: 0.95rem;
+    margin-bottom: 0.15rem;
+    filter: brightness(3);
 }

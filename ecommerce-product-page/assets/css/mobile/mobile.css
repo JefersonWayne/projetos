@@ -14,7 +14,7 @@ header {
     /*Box model stuff*/
     width: 100%;
     height: 3.5rem;
-    margin: 0 0 1rem 0;
+    margin: 0;
     padding: 0 1.5rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -28,7 +28,7 @@ header>section {
 
 header>#area-da-loja>#logo {
     /*Box model stuff*/
-    margin-left: 1.5rem;
+    margin-left: 0.75rem;
     /*Miscellaneous*/
     order: 2;
 }
@@ -155,7 +155,7 @@ header>#area-do-usuario>#carrinho>#pedido>#empty {
 header>#area-do-usuario>#imagem-do-usuario {
     /*Box model stuff*/
     width: 2.5rem;
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 0.75rem;
     border: 2px solid transparent;
     border-radius: 50%;
     /*Manipulations stuff*/
@@ -203,6 +203,7 @@ header>#area-da-loja>#menu {
     transition: width 500ms cubic-bezier(1, 0, 0, 1);
     /*Miscellaneous*/
     overflow: hidden;
+    z-index: 3;
 }
 
 header>#area-da-loja>#menu.active {
@@ -215,4 +216,185 @@ header>#area-da-loja>#menu.active>* {
     position: relative;
     /*Manipulations stuff*/
     opacity: 1;
+}
+
+header>#area-da-loja>#menu::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: width 500ms cubic-bezier(1, 0, 0, 1);
+}
+
+header>#area-da-loja>#menu.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+main>#imagens-do-produto {
+    width: 100%;
+}
+
+main>#imagens-do-produto>.imagem-destaque {
+    width: 100%;
+}
+
+main>#imagens-do-produto>#fileira {
+    display: none;
+}
+
+
+main>#informacoes-do-produto {
+    width: 100%;
+    padding-inline: 1.125rem;
+}
+
+
+main>#informacoes-do-produto>#nome-da-empresa {
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+    letter-spacing: 0.066rem;
+    margin: 0;
+}
+
+main>#informacoes-do-produto>#nome-do-produto {
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+main>#informacoes-do-produto>#descricao-do-produto {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+main>#informacoes-do-produto>#precos {
+    margin-block: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+}
+
+main>#informacoes-do-produto>#precos>#preco-com-desconto {
+    font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+}
+
+
+main>#informacoes-do-produto>#precos>#desconto {
+    color: hsl(26, 100%, 55%);
+    background-color: hsla(26, 100%, 51%, 0.1);
+    font-weight: bold;
+    padding: 0.125rem 0.4rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+main>#informacoes-do-produto>#precos>#preco-sem-desconto {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: line-through;
+    text-decoration-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    margin-left: auto;
+}
+
+main>#informacoes-do-produto>#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+main>#informacoes-do-produto>#buttons>#carrinho-qtd {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+
+    background-color: hsl(223, 64%, 98%);
+}
+
+main>#informacoes-do-produto>#buttons>#carrinho-qtd>.btn-carrinho-qtd {
+    margin: 0;
+    background-color: transparent;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: hsl(26, 100%, 55%);
+    padding-inline: 0.5rem;
+    cursor: pointer;
+    height: 100%;
+}
+
+main>#informacoes-do-produto>#buttons>#carrinho-qtd>.btn-carrinho-qtd:hover {
+    filter: brightness(0.7);
+}
+
+main>#informacoes-do-produto>#buttons>#carrinho-qtd>#btn-retirar {
+    padding-bottom: 0.3rem;
+}
+
+main>#informacoes-do-produto>#buttons>#carrinho-qtd>#btn-adicionar {
+    padding-bottom: 0.45rem;
+}
+
+main>#informacoes-do-produto>#buttons>#carrinho-qtd>#quantidade {
+    margin: 0;
+    font-weight: bold;
+}
+
+main>#informacoes-do-produto>#buttons>#adicionar-ao-carrinho {
+    color: #FFF;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 0.5rem;
+    font-weight: bold;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: box-shadow 400ms;
+}
+
+main>#informacoes-do-produto>#buttons>#adicionar-ao-carrinho:hover {
+    box-shadow: 0 0.7rem 1rem 0 rgb(255, 224, 200);
+}
+
+main>#informacoes-do-produto>#buttons>#adicionar-ao-carrinho>img {
+    width: 0.95rem;
+    margin-bottom: 0.15rem;
+    filter: brightness(3);
 }
